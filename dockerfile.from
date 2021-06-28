@@ -1,0 +1,10 @@
+FROM node:14.17-alpine
+WORKDIR /srv/hermes.web
+
+COPY package.json ./
+COPY yarn.lock ./
+
+RUN yarn
+
+RUN rm package.json
+RUN rm yarn.lock
