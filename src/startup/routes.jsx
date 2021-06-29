@@ -1,6 +1,6 @@
 import { Home } from 'home'
 
 export const routes = [{
-  Path: '/',
+  path: '/',
   Component: Home,
 }]
