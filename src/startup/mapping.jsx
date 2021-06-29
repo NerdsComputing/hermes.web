@@ -1,10 +1,11 @@
+import React from 'react'
+
 import { routes } from 'startup/routes'
 import { Route } from 'react-router-dom'
-import React from 'react'
 
 export const Mapping = () => <>
   {
-    routes.map((route, index) => <Route path={route.Path} key={index}>
+    routes.map((route, path) => <Route path={route.path} key={path}>
       <route.Component />
     </Route>)
   }
