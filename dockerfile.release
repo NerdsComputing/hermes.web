@@ -1,3 +1,19 @@
-FROM nginxdemos/hello:latest
+FROM nerdscomputing/hermes.web:from AS build
+WORKDIR /srv/hermes.web
 
 ARG VERSION="2021.0.0"
+
+COPY . .
+
+RUN echo '{ "version": "'$VERSION'" }' > ./public/version.json
+
+RUN yarn
+RUN yarn build
+
+FROM node:14.17-alpine
+WORKDIR /srv/hermes.web
+COPY --from=build /srv/hermes.web/build .
+
+RUN npm install -g serve
+
+ENTRYPOINT ["sh", "-c", "serve -s -l 80 ."]
