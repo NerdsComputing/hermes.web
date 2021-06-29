@@ -1,11 +1,12 @@
 import React from 'react'
-import { BrowserRouter as Router1, Switch } from 'react-router-dom'
+
+import { BrowserRouter, Switch } from 'react-router-dom'
 import { Mapping } from 'startup/mapping'
 
 export const Router = () => (
-  <Router1>
+  <BrowserRouter>
     <Switch>
       <Mapping />
     </Switch>
-  </Router1>
+  </BrowserRouter>
 )
