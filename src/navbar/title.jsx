@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Typography } from '@material-ui/core'
-import { useStyles } from 'header/style'
+import { useStyles } from 'navbar/style'
 
 export const Title = () => {
   const classes = useStyles()
