@@ -1,14 +1,13 @@
 import React from 'react'
-import { AppBar, Toolbar } from '@material-ui/core'
+import { AppBar, Grid } from '@material-ui/core'
 
 import { Title } from 'navbar/title'
-import { Email } from 'navbar/email'
-import { Gravatar } from 'navbar/gravatar'
+import { UserContent } from 'navbar/user-content'
+import { useStyles } from 'navbar/style'
 
 export const Navbar = () => <AppBar position={'static'}>
-  <Toolbar>
+  <Grid container className={useStyles().root} alignContent={'center'}>
     <Title />
-    <Email />
-    <Gravatar />
-  </Toolbar>
+    <UserContent />
+  </Grid>
 </AppBar>
