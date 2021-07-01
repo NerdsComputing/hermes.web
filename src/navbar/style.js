@@ -1,7 +1,10 @@
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles({
-  title: { flexGrow: 1 },
-  email: { margin: 5 },
-  gravatar: { margin: 5 },
+  root: { minHeight: '5vh' },
+  title: { margin: '0 0 0 15px' },
+  userContent: {
+    height: '100%',
+    paddingRight: 15,
+  },
 })
