@@ -1,6 +1,6 @@
 import React from 'react'
-import { Footer } from 'footer/footer'
 
+import { Footer } from 'footer/footer'
 import { useStyles } from 'footer/styles'
 
 export const Home = () => <div className={useStyles().divPageHeight}>
