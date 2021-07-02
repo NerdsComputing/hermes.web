@@ -1,9 +1,9 @@
-import slide1 from 'home/carousel/images/carousel1.png'
-import slide2 from 'home/carousel/images/carousel2.png'
-import slide3 from 'home/carousel/images/carousel3.png'
-import slide4 from 'home/carousel/images/carousel4.png'
-import slide5 from 'home/carousel/images/carousel5.png'
-import slide6 from 'home/carousel/images/carousel6.png'
+import slide1 from 'home/images/carousel1.png'
+import slide2 from 'home/images/carousel2.png'
+import slide3 from 'home/images/carousel3.png'
+import slide4 from 'home/images/carousel4.png'
+import slide5 from 'home/images/carousel5.png'
+import slide6 from 'home/images/carousel6.png'
 
 export const slides = [
   { image: slide1, description: 'Recycling is awesome!' },

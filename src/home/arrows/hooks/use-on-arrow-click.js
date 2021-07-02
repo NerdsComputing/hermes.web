@@ -1,6 +1,6 @@
-import { useContext } from 'home/carousel/hooks/use-context'
-import { useActions } from 'home/carousel/hooks/use-actions'
-import { calculateParameters } from 'home/carousel/caculate-parameters'
+import { useContext } from 'home/context'
+import { useActions } from 'home/arrows/hooks/use-actions'
+import { calculateParameters } from 'home/arrows/caculate-parameters'
 
 export const useOnArrowClick = () => {
   const { index } = useContext()

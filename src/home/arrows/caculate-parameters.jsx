@@ -1,4 +1,4 @@
-import { slides } from 'home/carousel/components'
+import { slides } from 'home/slides'
 
 export const calculateParameters = (direction, index) => {
   const numSlides = slides.length

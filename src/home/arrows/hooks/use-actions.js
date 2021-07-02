@@ -1,5 +1,5 @@
-import { useSetTimeout } from 'home/carousel/hooks/use-set-timeout'
-import { useResetState } from 'home/carousel/hooks/use-reset-state'
+import { useSetTimeout } from 'home/arrows/hooks/use-set-timeout'
+import { useResetState } from 'home/arrows/hooks/use-reset-state'
 
 export const useActions = () => {
   const onTimeout = useSetTimeout()

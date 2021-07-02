@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { useStyle } from 'home/carousel/styles/carousel'
-import { useContext } from 'home/carousel/hooks/use-context'
+import { useStyle } from 'home/slider/style'
+import { useContext } from 'home/context'
 
 const getStyle = (index, currentIndex) => ({ ...index !== currentIndex && { display: 'none' } })
 
-export const CarouselSlide = ({ image, description, index }) => {
+export const Slide = ({ image, description, index }) => {
   const { index: currentIndex } = useContext()
 
   return <div style={getStyle(index, currentIndex)}>
@@ -15,7 +15,7 @@ export const CarouselSlide = ({ image, description, index }) => {
   </div>
 }
 
-CarouselSlide.propTypes = {
+Slide.propTypes = {
   image: PropTypes.object.isRequired,
   description: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,

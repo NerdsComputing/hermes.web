@@ -1,18 +1,11 @@
 import { makeStyles } from '@material-ui/core'
 
-const div = {
+const carousel = {
   textAlign: 'center',
   padding: '100px',
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'row',
 }
-const head = {
-  textAlign: 'center',
-  padding: '50px',
-  justifyContent: 'center',
-}
-export const useStyle = makeStyles(() => ({
-  div,
-  head,
-}))
+
+export const useStyle = makeStyles(() => ({ carousel }))
