@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useStyle } from 'home/carousel/styles/style-content'
+import { useStyle } from 'home/carousel/styles/content'
 import { InsideContent } from 'home/carousel/inside-content'
 
 export const Content = () => <>

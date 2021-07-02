@@ -2,7 +2,7 @@ import React from 'react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'home/carousel/styles/style-arrow'
+import { useStyles } from 'home/carousel/styles/arrow'
 
 export const Arrow = ({ direction, clickFunction }) => {
   const icon = direction === 'left' ? <FaChevronLeft /> : <FaChevronRight />

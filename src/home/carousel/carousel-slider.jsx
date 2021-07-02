@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { useStyle } from 'home/carousel/styles/style-carousel'
+import { useStyle } from 'home/carousel/styles/carousel'
 import { useContext } from 'home/carousel/hooks/use-context'
 
 const getStyle = (index, currentIndex) => ({ ...index !== currentIndex && { display: 'none' } })
