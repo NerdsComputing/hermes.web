@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 
-const div1 = {
+const div = {
   textAlign: 'center',
   padding: '100px',
   display: 'flex',
@@ -13,6 +13,6 @@ const head = {
   justifyContent: 'center',
 }
 export const useStyle = makeStyles(() => ({
-  div1,
+  div,
   head,
 }))
