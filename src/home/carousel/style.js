@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 const carousel = {
   textAlign: 'center',
-  padding: '100px',
+  paddingTop: '2vh',
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'row',
