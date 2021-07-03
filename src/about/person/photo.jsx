@@ -1,13 +1,14 @@
 import React from 'react'
-import { Box, Grid } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 import PropTypes from 'prop-types'
 import { useStyles } from 'about/style'
+import { ItemResponsive } from 'about/components/item-responsive'
 
-export const Photo = ({ person }) => <Grid item md={6} sm={6} xs={6}>
+export const Photo = ({ person }) => <ItemResponsive>
   <Box display={'flex'} justifyContent={'center'}>
     <img src={person.picture} className={useStyles().img} />
   </Box>
-</Grid>
+</ItemResponsive>
 
 Photo.propTypes = { person: PropTypes.object.isRequired }
