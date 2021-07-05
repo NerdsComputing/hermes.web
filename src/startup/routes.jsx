@@ -1,4 +1,5 @@
 import { HomePage } from 'home'
+import { About } from 'about'
 
 export const routes = [{
 
