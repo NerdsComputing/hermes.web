@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { useStyles } from 'about/style'
-import { Mapping } from 'about/persons/mapping'
+import { People } from 'about/persons/mapping'
+import { Title } from 'about/title'
 
 export const About = () => <>
-  <h1 className={useStyles().title}>Hermes Team</h1>
-  <Mapping />
+  <Title />
+  <People />
 </>
