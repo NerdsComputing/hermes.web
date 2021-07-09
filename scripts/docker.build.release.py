@@ -17,4 +17,4 @@ parser.add_argument('--longVersion',
 
 args = parser.parse_args()
 
-system(f'docker build -t {args.tag} -f dockerfile.release --build-arg SHORT_VERSION={args.shortVersion} LONG_VERSION={args.longVersion} .')
+system(f'docker build -t {args.tag} -f dockerfile.release --build-arg SHORT_VERSION={args.shortVersion} --build-arg LONG_VERSION={args.longVersion} .')
