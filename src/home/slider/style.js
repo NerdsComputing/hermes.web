@@ -8,6 +8,8 @@ const description = {
 const card = {
   borderRadius: 5,
   margin: 'auto',
+  marginLeft: '10vw',
+  marginRight: '10vw',
   width: '65vw',
   boxShadow: '1.5vh 1.5vh 1.5vh black',
   display: 'flex',
