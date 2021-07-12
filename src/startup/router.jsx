@@ -8,4 +8,3 @@ export const Router = () => <BrowserRouter>
     <Mapping />
   </Switch>
 </BrowserRouter>
-
