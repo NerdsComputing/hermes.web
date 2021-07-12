@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
 
-import { CardAction } from 'detection/detection-card/action/card-action'
+import { CardAction } from 'detection/detection-card/action/container'
 
 export const CardButtons = () => <CardAction>
   <Button variant={'contained'} color={'primary'}>Set status</Button>
