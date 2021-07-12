@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core'
 
 const position = theme => ({
   position: 'static',
-  width: '100vw',
   bottom: theme.spacing(0),
 })
 
