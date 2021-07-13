@@ -1,11 +1,16 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Grid, Paper } from '@material-ui/core'
 
-import { Title } from 'user/header/title'
-import { TableHeader } from 'user/header/table-header'
+import { items } from 'user/header/items'
+import { Components } from 'user/header/component'
+import { useStyle } from 'user/style'
 
 export const Header = () => <Grid container spacing={2}>
-  <Title />
-  <TableHeader />
+  <Grid item xs={12}>
+    <Paper className={useStyle().title}>Detections</Paper>
+  </Grid>
+  {
+    items.map((items, index) => <Components items={items} key={index} />)
+  }
 </Grid>
 
