@@ -1,5 +1,6 @@
 import { HomePage } from 'home'
 import { About } from 'about'
+import { User } from 'user'
 import { Admin } from 'admin'
 
 export const routes = [{
@@ -14,4 +15,7 @@ export const routes = [{
 {
   path: '/',
   Component: HomePage,
+}, {
+  path: '/user',
+  Component: User,
 }]

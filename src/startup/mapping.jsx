@@ -6,7 +6,7 @@ import { Layout } from 'core/layout/layout'
 
 export const Mapping = () => <Layout>
   {
-    routes.map(route => <Route exact path={route.path} key={route.path}>
+    routes.map(route => <Route path={route.path} key={route.path} exact>
       <route.Component />
     </Route>)
   }
