@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/detection-card/content/container-style'
 
-export const Container = ({ children }) => <CardContent className={useStyles().contentRoot}>
+export const Container = ({ children }) => <CardContent className={useStyles().root}>
   <Grid container direction={'column'} justify={'center'} alignContent={'center'}
         className={useStyles().contentGrid}>
     <Box className={useStyles().contentBox}>
