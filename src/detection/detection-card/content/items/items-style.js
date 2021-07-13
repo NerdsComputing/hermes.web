@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 
-const contentItem = {
+const root = {
   display: 'flex',
   justifyContent: 'flex-start',
   alignItems: 'center',
@@ -10,6 +10,6 @@ const contentItem = {
 const contentText = { marginLeft: 5 }
 
 export const useStyles = makeStyles({
-  contentItem,
+  root,
   contentText,
 })
