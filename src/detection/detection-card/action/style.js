@@ -1,9 +1,9 @@
 import { makeStyles } from '@material-ui/core'
 
-const buttonsContainer = {
+const root = {
   height: '20%',
   padding: 0,
   borderTop: '.5px solid black',
 }
 
-export const useStyles = makeStyles({ buttonsContainer })
+export const useStyles = makeStyles({ root })
