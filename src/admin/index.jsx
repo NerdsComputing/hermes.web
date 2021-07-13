@@ -1,3 +1,9 @@
 import React from 'react'
 
-export const Title = () => <h1>Users</h1>
+import { Title } from 'admin/title'
+import { MyTable } from 'admin/table'
+
+export const Admin = () => <>
+  <Title />
+  <MyTable />
+</>
