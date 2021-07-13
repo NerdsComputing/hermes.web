@@ -4,9 +4,9 @@ import WatchLaterIcon from '@material-ui/icons/WatchLater'
 
 import { useStyles } from 'detection/detection-card/content/items/items-style'
 
-export const CreationAt = () => <Box className={useStyles().contentItem}>
+export const CreatedAt = () => <Box className={useStyles().root}>
   <WatchLaterIcon />
   <Typography variant={'h6'} align={'center'} className={useStyles().contentText}>
-    Creation at
+    Created at
   </Typography>
 </Box>

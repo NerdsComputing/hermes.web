@@ -4,9 +4,9 @@ import DescriptionIcon from '@material-ui/icons/Description'
 
 import { useStyles } from 'detection/detection-card/content/items/items-style'
 
-export const Attachements = () => <Box className={useStyles().contentItem}>
+export const Attachments = () => <Box className={useStyles().root}>
   <DescriptionIcon />
   <Typography variant={'h6'} align={'center'} className={useStyles().contentText}>
-    Attachements
+    Attachments
   </Typography>
 </Box>
