@@ -7,5 +7,5 @@ import { ids } from 'user/id'
 
 export const User = () => <div className={useStyle().main}>
   <Header />
-  {ids.map((ids, index) => <Row key={index} />)}
+  {ids.map(ids => <Row id={ids.id} key={ids.id} />)}
 </div>
