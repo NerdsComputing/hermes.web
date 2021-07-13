@@ -1,7 +1,7 @@
 import React from 'react'
-
 import { Grid, Paper } from '@material-ui/core'
 import PropTypes from 'prop-types'
+
 import { useStyle } from 'user/style'
 
 export const Components = ({ items }) => <Grid item xs={3}>
