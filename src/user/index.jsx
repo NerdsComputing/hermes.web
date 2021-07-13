@@ -1,11 +1,10 @@
 import React from 'react'
 
 import { Header } from 'user/header'
-import { Row } from 'user/row'
 import { useStyle } from 'user/style'
-import { ids } from 'user/id'
+import { Component } from 'user/component'
 
 export const User = () => <div className={useStyle().main}>
   <Header />
-  {ids.map(ids => <Row id={ids.id} key={ids.id} />)}
+  <Component />
 </div>
