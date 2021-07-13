@@ -7,7 +7,6 @@ const position = theme => ({
 })
 
 export const useStyles = makeStyles(theme => ({
-  content: { color: 'white' },
   root: {
     backgroundColor: theme.palette.primary.main,
     ...position(theme),

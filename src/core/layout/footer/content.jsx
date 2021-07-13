@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Typography } from '@material-ui/core'
 
-import { useStyles } from 'core/layout/footer/style'
+import { useStyles } from 'core/layout/footer/content/style'
 
 export const Content = () => <Typography className={useStyles().content}>
   Made with &#x2764; by
