@@ -7,8 +7,8 @@ const position = theme => ({
 })
 
 export const useStyles = makeStyles(theme => ({
-  title: { color: 'white' },
-  footer: {
+  content: { color: 'white' },
+  root: {
     backgroundColor: theme.palette.primary.main,
     ...position(theme),
     minHeight: '5vh',
