@@ -18,19 +18,8 @@ const contentBox = {
   border: '5px solid black',
 }
 
-const contentItem = {
-  display: 'flex',
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-  padding: '10px 0 10px 0',
-}
-
-const contentText = { marginLeft: 5 }
-
 export const useStyles = makeStyles({
   contentRoot,
   contentGrid,
   contentBox,
-  contentItem,
-  contentText,
 })
