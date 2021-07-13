@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, CardContent, Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'detection/detection-card/content/style'
+import { useStyles } from 'detection/detection-card/content/container-style'
 
 export const Container = ({ children }) => <CardContent className={useStyles().contentRoot}>
   <Grid container direction={'column'} justify={'center'} alignContent={'center'}
