@@ -2,9 +2,9 @@ import React from 'react'
 import { Card as MaterialCard } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'detection/detection-card/style'
+import { useStyle } from 'detection/detection-card/use-style'
 
-export const Card = ({ children }) => <MaterialCard className={useStyles().root}>
+export const Card = ({ children }) => <MaterialCard className={useStyle()}>
   {children}
 </MaterialCard>
 
