@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 import { useStyle } from 'user/header/style'
 
-export const Components = ({ items }) => <Grid item xs={3}>
+export const HeaderTitles = ({ items }) => <Grid item xs={3}>
   <Paper className={useStyle().paper}>{items}</Paper>
 </Grid>
 
-Components.propTypes = { items: PropTypes.string.isRequired }
+HeaderTitles.propTypes = { items: PropTypes.string.isRequired }
