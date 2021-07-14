@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Id } from 'admin/row/id'
-import { StyledRow } from 'admin/components/styled-row/styled-row'
+import { StyledRow } from 'admin/components/styled-row'
 import { Email } from 'admin/row/email'
 import { Gravatar } from 'admin/row/gravatar'
 
