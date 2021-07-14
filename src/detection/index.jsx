@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { DetectionWrapper } from 'detection/detection-wrapper'
-import { DetectionCard } from 'detection/detection-card'
+import { Wrapper } from 'detection/wrapper'
+import { Card } from 'detection/card'
 
-export const DetectionPage = () => <DetectionWrapper>
-  <DetectionCard />
-</DetectionWrapper>
+export const DetectionPage = () => <Wrapper>
+  <Card />
+</Wrapper>
