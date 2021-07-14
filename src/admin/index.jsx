@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Title } from 'admin/title'
 import { Table } from 'admin/table'
+import { Title } from 'admin/title'
 
 export const Admin = () => <>
   <Title />
