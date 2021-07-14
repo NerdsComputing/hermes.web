@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Paper, Table as MaterialTable , TableContainer } from '@material-ui/core'
+import { Grid, Paper, Table as MaterialTable, TableContainer } from '@material-ui/core'
 
 import { Head } from 'admin/head'
 import { User } from 'admin/user'
