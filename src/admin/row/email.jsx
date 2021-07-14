@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'admin/body/style'
+import { useStyles } from 'admin/row/style'
 import { EmailCell } from 'admin/components/cell/email-cell'
 
 export const Email = ({ user }) => <EmailCell>

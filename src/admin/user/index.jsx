@@ -2,8 +2,8 @@ import React from 'react'
 import { TableBody } from '@material-ui/core'
 
 import { users } from 'admin/user/users'
-import { Body } from 'admin/body'
+import { Row } from 'admin/row'
 
-export const User = () => <TableBody>
-  { users.map(user => <Body key={user} user={user} />) }
+export const Body = () => <TableBody>
+  { users.map(user => <Row key={user} user={user} />) }
 </TableBody>
