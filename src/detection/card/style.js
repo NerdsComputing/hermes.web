@@ -1,9 +1,9 @@
 import { useMediaQuery, useTheme } from '@material-ui/core'
 
-import { useDesktopStyle } from 'detection/detection-card/desktop-style'
-import { useMobileStyle } from 'detection/detection-card/mobile-style'
+import { useDesktopStyle } from 'detection/card/desktop-style'
+import { useMobileStyle } from 'detection/card/mobile-style'
 
-export const useStyle = () => {
+export const useStyles = () => {
   const theme = useTheme()
   const { root: desktopScreen } = useDesktopStyle()
   const { root: mobileScreen } = useMobileStyle()
