@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Body } from 'admin/body/body'
+import { Body } from 'admin/body'
 
 export const OneUser = ({ user }) => <Body user={user} />
 
