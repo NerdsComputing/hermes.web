@@ -5,5 +5,4 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white,
   },
-  body: { '&:nth-of-type(odd)': { backgroundColor: theme.palette.action.hover } },
 }))

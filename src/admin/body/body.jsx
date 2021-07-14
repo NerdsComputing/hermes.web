@@ -1,19 +1,15 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { Id } from 'admin/id'
-import { CenterCell } from 'admin/components/center-cell'
-import { StyledRow } from 'admin/components/styled-row'
-import { EmailCell } from 'admin/components/email-cell'
-import { useStyles } from 'admin/body/style'
+import { Id } from 'admin/body/id'
+import { StyledRow } from 'admin/components/row/styled-row'
+import { Email } from 'admin/body/email'
+import { Gravatar } from 'admin/body/gravatar'
 
 export const Body = ({ user }) => <StyledRow key={user.id}>
   <Id user={user} />
-  <EmailCell>
-    <Typography className={useStyles().root}>{user.email}</Typography>
-  </EmailCell>
-  <CenterCell align={'center'}>:)</CenterCell>
+  <Email user={user} />
+  <Gravatar />
 </StyledRow>
 
 Body.propTypes = { user: PropTypes.object.isRequired }
