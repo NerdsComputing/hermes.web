@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { TableCell } from '@material-ui/core'
 
-export const Id = ({ user }) => <TableCell component={'th'} scope={'row'} align={'center'}>
+import { CenterCell } from 'admin/components/center-cell'
+
+export const Id = ({ user }) => <CenterCell component={'th'} scope={'row'} align={'center'}>
   {user.id}
-</TableCell>
+</CenterCell>
 
 Id.propTypes = { user: PropTypes.object.isRequired }

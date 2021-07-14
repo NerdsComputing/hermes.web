@@ -1,16 +1,19 @@
 import React from 'react'
-import { TableCell, TableRow, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
 import { Id } from 'admin/id'
+import { CenterCell } from 'admin/components/center-cell'
+import { StyledRow } from 'admin/components/styled-row'
+import { EmailCell } from 'admin/components/email-cell'
 import { useStyles } from 'admin/body/style'
 
-export const Body = ({ user }) => <TableRow key={user.id}>
+export const Body = ({ user }) => <StyledRow key={user.id}>
   <Id user={user} />
-  <TableCell className={useStyles().root}>
-    <Typography className={useStyles().email}>{user.email}</Typography>
-  </TableCell>
-  <TableCell className={useStyles().center}>:)</TableCell>
-</TableRow>
+  <EmailCell>
+    <Typography className={useStyles().root}>{user.email}</Typography>
+  </EmailCell>
+  <CenterCell align={'center'}>:)</CenterCell>
+</StyledRow>
 
 Body.propTypes = { user: PropTypes.object.isRequired }

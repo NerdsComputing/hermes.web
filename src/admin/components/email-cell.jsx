@@ -4,8 +4,8 @@ import { TableCell } from '@material-ui/core'
 
 import { useStyles } from 'admin/components/style'
 
-export const CenterCell = ({ children }) => <TableCell align={'center'} classes={useStyles()}>
+export const EmailCell = ({ children }) => <TableCell align={'left'} classes={useStyles()}>
   {children}
 </TableCell>
 
-CenterCell.propTypes = { children: PropTypes.node.isRequired }
+EmailCell.propTypes = { children: PropTypes.node.isRequired }
