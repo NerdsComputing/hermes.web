@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Cell } from 'admin/components/cell'
 
-export const Id = ({ user }) => <Cell component={'th'} scope={'row'} alignment={'center'}>
+export const Id = ({ user }) => <Cell alignment={'center'}>
   {user.id}
 </Cell>
 
