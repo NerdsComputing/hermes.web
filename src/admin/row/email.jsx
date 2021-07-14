@@ -3,10 +3,10 @@ import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
 import { useStyles } from 'admin/row/style'
-import { EmailCell } from 'admin/components/cell/email-cell'
+import { Cell } from 'admin/components/cell'
 
-export const Email = ({ user }) => <EmailCell>
+export const Email = ({ user }) => <Cell alignment={'left'}>
   <Typography classes={useStyles()}>{user.email}</Typography>
-</EmailCell>
+</Cell>
 
 Email.propTypes = { user: PropTypes.object.isRequired }

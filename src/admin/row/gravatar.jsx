@@ -1,5 +1,5 @@
 import React from 'react'
 
-import { CenterCell } from 'admin/components/cell/center-cell'
+import { Cell } from 'admin/components/cell'
 
-export const Gravatar = () => <CenterCell align={'center'}>:)</CenterCell>
+export const Gravatar = () => <Cell alignment={'center'}>:)</Cell>
