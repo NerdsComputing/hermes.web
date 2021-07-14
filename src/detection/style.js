@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 const root = {
-  width: '100vw',
+  width: '100%',
   height: '100vh',
   backgroundColor: '#d4fae3',
 }
