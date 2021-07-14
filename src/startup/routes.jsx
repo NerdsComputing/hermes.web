@@ -5,12 +5,12 @@ import { Admin } from 'admin'
 
 export const routes = [{
   path: '/detection/:id',
-  Component: DetectionPage,
+  component: DetectionPage,
 },
 {
 
   path: '/about',
-  Component: About,
+  component: About,
 },
 {
   path: '/admin',
@@ -18,5 +18,5 @@ export const routes = [{
 },
 {
   path: '/',
-  Component: HomePage,
+  component: HomePage,
 }]
