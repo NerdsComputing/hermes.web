@@ -8,10 +8,10 @@ export const routes = [{
   Component: About,
 },
 {
-  path: '/',
-  Component: HomePage,
-},
-{
   path: '/admin',
   Component: Admin,
+},
+{
+  path: '/',
+  Component: HomePage,
 }]
