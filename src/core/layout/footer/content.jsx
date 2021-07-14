@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, Typography } from '@material-ui/core'
 
-import { useStyles } from 'core/footer/styles'
+import { useStyles } from 'core/layout/footer/content/style'
 
-export const Content = () => <Typography className={useStyles().title}>
+export const Content = () => <Typography className={useStyles().content}>
   Made with &#x2764; by
   <Link color={'inherit'} href={'/about'}> the Hermes team</Link>
 </Typography>
