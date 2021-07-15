@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid, Paper } from '@material-ui/core'
 
-import { useStyle } from 'user/row/style'
+import { usePaperStyles } from 'user/row/hooks/use-paper-styles'
 
 export const Class = () => <Grid item xs={3}>
-  <Paper className={useStyle().paper}>detection_class</Paper>
+  <Paper classes={usePaperStyles()}>detection_class</Paper>
 </Grid>
 

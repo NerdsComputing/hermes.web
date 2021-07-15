@@ -2,10 +2,10 @@ import React from 'react'
 import { Grid, Paper } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyle } from 'user/row/style'
+import { usePaperStyles } from 'user/row/hooks/use-paper-styles'
 
 export const Id = ({ id }) => <Grid item xs={3}>
-  <Paper className={useStyle().paper}>{id}</Paper>
+  <Paper classes={usePaperStyles()}>{id}</Paper>
 </Grid>
 
 Id.propTypes = { id: PropTypes.number.isRequired }
