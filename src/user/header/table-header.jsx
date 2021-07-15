@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { items } from 'user/header/items'
-import { HeaderTitles } from 'user/header/header-titles'
+import { item } from 'user/header/item'
+import { HeaderTitle } from 'user/header/header-title'
 
-export const TableHeader = () => items.map((items, index) => <HeaderTitles items={items} key={index} />)
+export const TableHeader = () => item.map((item, index) => <HeaderTitle item={item} key={index} />)
