@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid as MaterialGrid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'detection/card/content/container/grid-style'
+import { useStyles } from 'detection/card/content/wrapper/grid-style'
 
 export const Grid = ({ children }) => <MaterialGrid container direction={'column'} justify={'center'}
                                                     alignContent={'center'} classes={useStyles()}>
