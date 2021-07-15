@@ -3,10 +3,10 @@ import React from 'react'
 import { CreatedAt } from 'detection/card/content/items/created-at'
 import { Description } from 'detection/card/content/items/description'
 import { Attachments } from 'detection/card/content/items/attachments'
-import { Container } from 'detection/card/content/container'
+import { Wrapper } from 'detection/card/content/wrapper'
 
-export const Content = () => <Container>
+export const Content = () => <Wrapper>
   <CreatedAt />
   <Description />
   <Attachments />
-</Container>
+</Wrapper>
