@@ -5,6 +5,6 @@ import { Actions } from 'detection/card/action/actions'
 
 export const Buttons = () => <Actions>
   <Button variant={'contained'} color={'primary'}>Set status</Button>
-  <Button variant={'contained'} color={'primary'}>Edit</Button>
-  <Button variant={'contained'} color={'primary'}>Delete</Button>
+  <Button variant={'contained'} color={'primary'} style={{ backgroundColor: '#d98726' }}>Edit</Button>
+  <Button variant={'contained'} color={'primary'} style={{ backgroundColor: '#bf020e' }}>Delete</Button>
 </Actions>
