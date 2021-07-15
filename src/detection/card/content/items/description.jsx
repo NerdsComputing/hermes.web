@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
-import DescriptionIcon from '@material-ui/icons/Description'
+import { Description as DescriptionIcon } from '@material-ui/icons'
 
 import { useStyles } from 'detection/card/content/items/items-style'
 
