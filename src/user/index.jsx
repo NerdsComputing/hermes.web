@@ -1,10 +1,11 @@
 import React from 'react'
+import { Grid } from '@material-ui/core'
 
 import { Header } from 'user/header'
-import { useStyle } from 'user/style'
 import { TableRows } from 'user/table-rows'
+import { useMainStyles } from 'user/hooks/use-main-styles'
 
-export const User = () => <div className={useStyle().main}>
+export const User = () => <Grid container classes={useMainStyles()}>
   <Header />
   <TableRows />
-</div>
+</Grid>
