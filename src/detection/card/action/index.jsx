@@ -1,10 +1,12 @@
 import React from 'react'
-import { Button } from '@material-ui/core'
 
 import { Actions } from 'detection/card/action/actions'
+import { Delete } from 'detection/card/action/buttons/delete'
+import { SetStatus } from 'detection/card/action/buttons/set-status'
+import { Edit } from 'detection/card/action/buttons/edit'
 
 export const Buttons = () => <Actions>
-  <Button variant={'contained'} color={'primary'}>Set status</Button>
-  <Button variant={'contained'} color={'primary'} style={{ backgroundColor: '#d98726' }}>Edit</Button>
-  <Button variant={'contained'} color={'primary'} style={{ backgroundColor: '#bf020e' }}>Delete</Button>
+  <SetStatus />
+  <Edit />
+  <Delete />
 </Actions>
