@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/card/style'
 
-export const CardWrapper = ({ children }) => <Card className={useStyles()}>
+export const Wrapper = ({ children }) => <Card className={useStyles()}>
   {children}
 </Card>
 
-CardWrapper.propTypes = { children: PropTypes.array.isRequired }
+Wrapper.propTypes = { children: PropTypes.array.isRequired }
