@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: '30%',
-    align: 'left',
+    maxWidth: '9vw',
+    maxHeight: '9vh',
   },
 }))

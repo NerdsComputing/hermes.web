@@ -31,14 +31,4 @@ export const users = [{
   email: 'email@gmail.com',
 
 },
-{
-  id: 8,
-  email: 'bia.topircean@gmail.com',
-},
-{
-  id: 9,
-  email: 'email@gmail.com',
-
-},
-
 ]

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Table } from 'admin/table'
 import { Title } from 'admin/title'
+import { Body } from 'admin/body'
 
 export const Admin = () => <>
   <Title />
-  <Table />
+  <Body />
 </>
