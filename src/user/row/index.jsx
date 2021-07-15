@@ -1,17 +1,16 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
+import { Button, CardActions, Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { Id } from 'user/row/items/id'
-import { Class } from 'user/row/items/class'
-import { Score } from 'user/row/items/score'
-import { Timestamp } from 'user/row/items/timestamp'
+import { Content } from 'user/row/content'
+import { useStyle } from 'user/row/style'
 
-export const Row = ({ id }) => <Grid container spacing={2}>
-  <Id id={id} />
-  <Class />
-  <Score />
-  <Timestamp />
+export const Row = ({ id }) => <Grid container spacing={2} classes={useStyle().grid}>
+  <CardActions>
+    <Button>
+      <Content id={id} />
+    </Button>
+  </CardActions>
 </Grid>
 
 Row.propTypes = { id: PropTypes.number.isRequired }
