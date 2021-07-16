@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'detection/card/content/card-content/wrapper-style'
+import { useStyles } from 'detection/card/card-content/wrapper-style'
 
 export const Wrapper = ({ children }) => <Box classes={useStyles()}>
   {children}
