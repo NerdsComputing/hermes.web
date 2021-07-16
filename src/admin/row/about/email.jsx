@@ -2,8 +2,10 @@ import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
+import { useStyles } from 'admin/row/about/style'
+
 export const Email = ({ user }) => <Grid item>
-  <Grid container justify={'center'} style={{ height: '100%' }} alignContent={'center'}>
+  <Grid container className={useStyles().alignment}>
     <Typography>
       {user.email}
     </Typography>

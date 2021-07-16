@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box, Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
+import { useStyles } from 'admin/body/style'
 
-export const Alignment = ({ children }) => <Box maxHeight={'80vh'} overflow={'auto'}>
-  <Grid container justify={'center'} alignContent={'center'} spacing={'5'}>
+export const Alignment = ({ children }) => <Box className={useStyles().root}>
+  <Grid container className={useStyles().alignment} spacing={'5'}>
     { children }
   </Grid>
 </Box>
