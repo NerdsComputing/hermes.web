@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Grid, Hidden } from '@material-ui/core'
 
-import { Grid, Typography } from '@material-ui/core'
-import { useStyles } from 'admin/row/about/style'
+import { IdNumber } from 'admin/row/about/id-number'
 
-export const Id = ({ user }) => <Grid item>
-  <Grid container classes={useStyles()}>
-    <Typography align={'center'}>
-      {user.id}
-    </Typography>
+export const Id = ({ user }) => <Hidden only={['sm', 'xs']}>
+  <Grid item>
+    <IdNumber user={user} />
   </Grid>
-</Grid>
+</Hidden>
 
 Id.propTypes = { user: PropTypes.object.isRequired }

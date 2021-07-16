@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles(() => ({
-  root: { fontSize: '2vw' },
+  root: { fontSize: '1.5vw' },
   alignment: {
     justify: 'center',
     height: '100%',
