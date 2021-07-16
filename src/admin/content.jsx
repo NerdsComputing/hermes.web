@@ -9,7 +9,7 @@ import { Id } from 'admin/row/about/id'
 export const Content = ({ user }) => <Grid container spacing={2}>
   <Id user={user} />
   <Gravatar />
-  <Grid item lg={7}><Email user={user} /></Grid>
+  <Email user={user} />
 </Grid>
 
 Content.propTypes = { user: PropTypes.object.isRequired }
