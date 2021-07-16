@@ -7,7 +7,7 @@ import { Email } from 'admin/row/about/email'
 import { Id } from 'admin/row/about/id'
 
 export const Content = ({ user }) => <Grid container spacing={2}>
-  <Grid item lg={1}><Id user={user} /></Grid>
+  <Id user={user} />
   <Gravatar />
   <Grid item lg={7}><Email user={user} /></Grid>
 </Grid>
