@@ -7,7 +7,7 @@ export const useStyles = () => {
   const theme = useTheme()
   const desktopScreen = useDesktopStyle()
   const mobileScreen = useMobileStyle()
-  const isDesktopScreen = useMediaQuery(theme.breakpoints.up('md'))
+  const isDesktopScreen = useMediaQuery(theme.breakpoints.up('sm'))
 
   return isDesktopScreen ? desktopScreen : mobileScreen
 }
