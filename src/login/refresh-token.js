@@ -4,7 +4,7 @@ const refreshToken = async(handle, refreshTiming) => {
   setTimeout(refreshToken, refreshTiming)
 }
 
-export const Refreshtoken = handle => {
+export const refreshedtoken = handle => {
   const refreshTiming = (handle.tokenObj.expires_in || 3600 - 5 * 60) * 1000
   refreshToken(handle, refreshTiming)
   setTimeout(refreshToken, refreshTiming)
