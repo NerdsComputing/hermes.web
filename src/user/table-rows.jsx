@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ids } from 'user/id'
+import { items } from 'user/items'
 import { Row } from 'user/row'
 
-export const TableRows = () => ids.map(ids => <Row id={ids.id} key={ids.id} />)
+export const TableRows = () => items.map(items => <Row item={items} key={items} />)
