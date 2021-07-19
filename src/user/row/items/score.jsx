@@ -1,8 +1,9 @@
 import React from 'react'
-import { Grid, Paper } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 import { usePaperStyles } from 'user/row/hooks/use-paper-styles'
+import PropTypes from 'prop-types'
 
-export const Score = () => <Grid item xs={3}>
-  <Paper classes={usePaperStyles()}>detection_score</Paper>
-</Grid>
+export const Score = ({ score }) => <Grid item xs={3} classes={usePaperStyles()}>{score}</Grid>
+
+Score.propTypes = { score: PropTypes.number.isRequired }
