@@ -1,0 +1,7 @@
+{
+  "environment": "Local",
+  "google": {
+    "clientId" : "147813579094-8qbv6canv6167qlga4k9788dg0qmgokn.apps.googleusercontent.com",
+    "cookiePolicy": "single_host_origin"
+  }
+}
