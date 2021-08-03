@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { Context, useDefaultContext } from 'login/context'
-import { LoginMenu } from 'login/login-menu'
+import { Menu } from 'login/menu'
 
 export const Login = () => <Context.Provider value={useDefaultContext()}>
-  <LoginMenu />
+  <Menu />
 </Context.Provider>
