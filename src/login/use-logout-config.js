@@ -11,7 +11,7 @@ export const useSuccess = () => {
   }, [setUser])
 }
 
-export const useConfigLogout = () => ({
+export const useLogoutConfig = () => ({
   clientId,
   onLogoutSuccess: useSuccess(),
 })
