@@ -7,7 +7,7 @@ import { Layout } from 'core/layout/layout'
 export const Mapping = () => <Layout>
   {
     routes.map(route => <Route exact path={route.path} key={route.path}>
-      <route.Component />
+      <route.component />
     </Route>)
   }
 </Layout>
