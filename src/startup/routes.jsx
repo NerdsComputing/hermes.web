@@ -3,6 +3,7 @@ import { DetectionPage } from 'detection'
 import { About } from 'about'
 import { Admin } from 'admin'
 import { Detections } from 'detections'
+import { Cameras } from 'cameras'
 
 export const routes = [{
 
@@ -14,15 +15,19 @@ export const routes = [{
   component: DetectionPage,
 },
 {
+  path: '/cameras',
+  component: Cameras,
+},
+{
   path: '/admin',
   Component: Admin,
 },
 {
 
-  path: '/about',
-  component: About,
-},
-{
-  path: '/',
-  component: HomePage,
-}]
+    path: '/about',
+    component: About,
+  },
+  {
+    path: '/',
+    component: HomePage,
+  }]
