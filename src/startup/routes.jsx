@@ -8,7 +8,7 @@ import { Cameras } from 'cameras'
 export const routes = [{
 
   path: '/detections',
-  Component: Detections,
+  component: Detections,
 },
 {
   path: '/detection/:id',
@@ -20,7 +20,7 @@ export const routes = [{
 },
 {
   path: '/admin',
-  Component: Admin,
+  component: Admin,
 },
 {
 
