@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { useContext } from 'login/context'
-import { LoginButton } from 'login/login-button'
+import { Button } from 'login/login-button'
 
-export const LoginMenu = () => {
+export const Menu = () => {
   const { user } = useContext()
 
   return <div>
-    <LoginButton user={user} />
+    <Button user={user} />
   </div>
 }
