@@ -4,9 +4,6 @@ import { useContext } from 'login/context'
 import { clientId, cookiePolicy } from 'login/config'
 import { refreshedtoken } from 'login/refresh-token'
 
-export const onSuccess = {}
-export const onFailure = {}
-
 const useSuccess = () => {
   const { setUser } = useContext()
 
@@ -24,10 +21,9 @@ const useFailure = () => {
   }, [setUser])
 }
 
-export const useConfig = () => ({
+export const useLoginConfig = () => ({
   onSuccess: useSuccess(),
   clientId,
   cookiePolicy,
   onFailure: useFailure(),
 })
-
