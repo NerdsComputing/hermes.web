@@ -3,7 +3,10 @@ import { Provider } from 'react-redux'
 
 import { Router } from 'startup/router'
 import { configureStore } from 'startup/create-store'
+import { Settings } from 'settings'
 
 export const App = () => <Provider store={configureStore()}>
-  <Router />
+  <Settings>
+    <Router />
+  </Settings>
 </Provider>
