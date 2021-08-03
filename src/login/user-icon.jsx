@@ -4,11 +4,7 @@ import * as PropTypes from 'prop-types'
 
 import { ProfileImage } from 'login/profile-image'
 
-export const UserIcon = ({ user }) => {
-  console.log(user)
-
-  return user ? <ProfileImage user={user} /> : <PersonIcon />
-}
+export const UserIcon = ({ user }) => user ? <ProfileImage user={user} /> : <PersonIcon />
 
 UserIcon.propTypes = { user: PropTypes.object }
 UserIcon.defaultProps = { user: undefined }
