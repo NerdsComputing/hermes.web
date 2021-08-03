@@ -24,10 +24,10 @@ export const routes = [{
 },
 {
 
-    path: '/about',
-    component: About,
-  },
-  {
-    path: '/',
-    component: HomePage,
-  }]
+  path: '/about',
+  component: About,
+},
+{
+  path: '/',
+  component: HomePage,
+}]
