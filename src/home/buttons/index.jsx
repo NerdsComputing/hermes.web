@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
+
 import { Camera } from 'home/buttons/camera'
 import { Detection } from 'home/buttons/detection'
 
