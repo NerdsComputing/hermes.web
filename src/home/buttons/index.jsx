@@ -1,9 +1,9 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
-import { CameraButton } from 'home/buttons/camera-button'
+import { Camera } from 'home/buttons/camera'
 import { DetectionButton } from 'home/buttons/detection-button'
 
 export const Buttons = () => <Grid container spacing={'10'} justify={'center'}>
-  <CameraButton>See Cameras</CameraButton>
+  <Camera>See Cameras</Camera>
   <DetectionButton>See Detections</DetectionButton>
 </Grid>

@@ -6,10 +6,10 @@ function cameras() {
   window.location.href = '/cameras'
 }
 
-export const CameraButton = ({ children }) => <Grid item>
+export const Camera = ({ children }) => <Grid item>
   <Button variant={'contained'} color={'primary'} onClick={cameras}>
     {children}
   </Button>
 </Grid>
 
-CameraButton.propTypes = { children: PropTypes.array.isRequired }
+Camera.propTypes = { children: PropTypes.array.isRequired }
