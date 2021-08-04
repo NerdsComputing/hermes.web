@@ -15,7 +15,7 @@ const failure = (state, { payload }) => ({ ...state, errors: payload, loading: f
 
 export const get = createSlice({
   initialState,
-  name: 'getCamerasSlice',
+  name: 'cameras',
   reducers: {
     attempt,
     success,
