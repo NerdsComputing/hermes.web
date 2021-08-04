@@ -1,6 +1,8 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
-export const client = new ApolloClient({
-  uri: 'https://hermes.api.dev.k8s.nerds.sh/graphql',
+import { settings } from 'settings'
+
+export const Client = () => new ApolloClient({
+  uri: settings().url,
   cache: new InMemoryCache(),
 })
