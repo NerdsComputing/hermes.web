@@ -1,8 +1,8 @@
 import { useCallback } from 'react'
 
 import { useContext } from 'login/context'
-import { clientId, cookiePolicy } from 'login/config'
 import { refreshedtoken } from 'login/refresh-token'
+import { useSettings } from 'settings/hooks/use-settings'
 
 const useSuccess = () => {
   const { setUser } = useContext()
@@ -23,7 +23,7 @@ const useFailure = () => {
 
 export const useLoginConfig = () => ({
   onSuccess: useSuccess(),
-  clientId,
-  cookiePolicy,
+  clientId: useSettings().google.clientId,
+  cookiePolicy: useSettings().google.cookiePolicy,
   onFailure: useFailure(),
 })
