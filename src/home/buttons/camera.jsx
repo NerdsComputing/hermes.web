@@ -1,13 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Button, Grid } from '@material-ui/core'
-
-function cameras() {
-  window.location.href = '/cameras'
-}
+import { useNavigation } from 'home/buttons/hooks/use-navigation'
 
 export const Camera = ({ children }) => <Grid item>
-  <Button variant={'contained'} color={'primary'} onClick={cameras}>
+  <Button variant={'contained'} color={'primary'} onClick={useNavigation('/cameras')}>
     {children}
   </Button>
 </Grid>
