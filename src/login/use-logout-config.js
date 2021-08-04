@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 
 import { useContext } from 'login/context'
-import { clientId } from 'login/config'
+import { useSettings } from 'settings/hooks/use-settings'
 
 export const useSuccess = () => {
   const { setUser } = useContext()
@@ -12,7 +12,7 @@ export const useSuccess = () => {
 }
 
 export const useLogoutConfig = () => ({
-  clientId,
+  clientId: useSettings().google.clientId,
   onLogoutSuccess: useSuccess(),
 })
 
