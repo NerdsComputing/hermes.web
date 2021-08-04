@@ -1,3 +1,9 @@
 import React from 'react'
 
-export const Cameras = () => <>Put your components here</>
+import { useGetCameras } from 'cameras/hooks/use-get-cameras'
+
+export const Cameras = () => {
+  useGetCameras()
+
+  return <>Cameras</>
+}
