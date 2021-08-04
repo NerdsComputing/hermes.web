@@ -1,3 +1,5 @@
 import { combineEpics } from 'redux-observable'
 
-export const rootEpic = combineEpics()
+import { cameras } from 'cameras/epics'
+
+export const rootEpic = combineEpics(cameras)
