@@ -1,10 +1,9 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 
-import { Camera } from 'home/buttons/camera'
-import { Detection } from 'home/buttons/detection'
+import { NavigationButton } from 'home/buttons/navigation-button'
 
 export const Live = () => <Grid container spacing={'10'} justify={'center'}>
-  <Camera>See Cameras</Camera>
-  <Detection>See Detections</Detection>
+  <NavigationButton path={'/cameras'}>See Cameras</NavigationButton>
+  <NavigationButton path={'/detections'}>See Detections</NavigationButton>
 </Grid>
