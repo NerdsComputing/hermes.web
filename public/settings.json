@@ -4,5 +4,5 @@
     "clientId" : "147813579094-8qbv6canv6167qlga4k9788dg0qmgokn.apps.googleusercontent.com",
     "cookiePolicy": "single_host_origin"
   },
-  "url": "https://hermes.api.dev.k8s.nerds.sh/graphql"
+  "apiUrl": "https://hermes.api.dev.k8s.nerds.sh/graphql"
 }
