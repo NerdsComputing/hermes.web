@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, ListItemText } from '@material-ui/core'
 
-export const CustomLink = ({ item }) => <Link href={item.link}>
+import { useNavigation } from 'core/layout/navbar/responsive-drawer/mobile/drawer/hooks/use-navigation'
+
+export const CustomLink = ({ item }) => <Link onClick={useNavigation(item)}>
   <ListItemText primary={item.label} />
 </Link>
 
