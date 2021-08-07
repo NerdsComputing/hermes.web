@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { ListItem } from '@material-ui/core'
 
 import { Login } from 'login'
-import { CustomLink } from 'core/layout/navbar/responsive-drawer/drawer/custom-link'
+import { CustomLink } from 'core/layout/navbar/responsive-drawer/mobile/drawer/custom-link'
 
 const useContent = item => item.link ? <CustomLink item={item} /> : <Login />
 
