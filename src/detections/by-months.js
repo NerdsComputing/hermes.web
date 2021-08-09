@@ -29,7 +29,7 @@ const accumulator = (acc, [key, value]) => {
   return acc
 }
 
-export const ByMonths = setState => from(data.detections.items)
+export const byMonths = setState => from(data.detections.items)
   .pipe(reduce((acc, current) => acc[current.class] ? addToClass(acc, current) : addClass(acc, current), {}))
   .pipe(mergeMap(data => Object.entries(data)))
   .pipe(reduce(accumulator, {}))

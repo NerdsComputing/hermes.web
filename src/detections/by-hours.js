@@ -28,7 +28,7 @@ const accumulator = (acc, [key, value]) => {
   return acc
 }
 
-export const ByHours = setState => from(data.detections.items)
+export const byHours = setState => from(data.detections.items)
   .pipe(reduce((acc, current) => acc[current.class] ? addToClass(acc, current) : addClass(acc, current), {}))
   .pipe(tap(acc => console.log(acc)))
   .pipe(mergeMap(data => Object.entries(data)))
