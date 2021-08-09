@@ -1,8 +1,8 @@
 import React from 'react'
 import { List } from '@material-ui/core'
 
-import { items } from 'core/layout/navbar/responsive-drawer/mobile/drawer/items'
-import { DrawerItem } from 'core/layout/navbar/responsive-drawer/mobile/drawer/drawer-item'
+import { items } from 'core/layout/navbar/mobile/drawer/items'
+import { DrawerItem } from 'core/layout/navbar/mobile/drawer/drawer-item'
 
 export const DrawerContent = () => <List>
   {
