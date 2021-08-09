@@ -5,7 +5,7 @@ import { Home } from 'core/layout/navbar/links/home'
 import { Icon } from 'core/layout/navbar/mobile/icon'
 
 export const Content = () => <AppBar>
-  <Grid container justify={'space-between'}>
+  <Grid container justify={'space-between'} alignItems={'center'}>
     <Home />
     <Icon />
   </Grid>
