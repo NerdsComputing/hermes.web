@@ -7,7 +7,7 @@
       "January-March", "April-June", "July-September", "October-December"
     ],
     "days": [
-      "1-7", "8-15", "16-23", "24-31"
+      "Q1", "Q2", "Q3", "Q4"
     ]
   }
 }
