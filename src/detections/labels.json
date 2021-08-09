@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "hours": [
+      "00:00-05:59", "06:00-11:59", "12:00-17:59", "18:00-23:59"
+    ],
+    "months": [
+      "January-March", "April-June", "July-September", "October-December"
+    ],
+    "days": [
+      "1-7", "8-15", "16-24", "25-31"
+    ]
+  }
+}
