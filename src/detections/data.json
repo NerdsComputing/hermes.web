@@ -1,0 +1,583 @@
+{
+  "data": {
+    "detections": {
+      "pageIndex": 0,
+      "pageSize": 200,
+      "totalCount": 52,
+      "items": [
+        {
+          "id": 362,
+          "score": 1.0,
+          "class": "pet",
+          "timestamp": "2021-05-31T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 363,
+          "score": 2.0,
+          "class": "pet",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 364,
+          "score": 1.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 365,
+          "score": 2.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 366,
+          "score": 3.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 367,
+          "score": 4.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 368,
+          "score": 5.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 369,
+          "score": 3.0,
+          "class": "pet",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 370,
+          "score": 4.0,
+          "class": "pet",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 371,
+          "score": 5.0,
+          "class": "pet",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 372,
+          "score": 1.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 373,
+          "score": 2.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 374,
+          "score": 3.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 375,
+          "score": 4.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 376,
+          "score": 5.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 377,
+          "score": 1.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 378,
+          "score": 2.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 379,
+          "score": 3.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 380,
+          "score": 4.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 381,
+          "score": 5.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 382,
+          "score": 1.0,
+          "class": "aluminium",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 383,
+          "score": 2.0,
+          "class": "aluminium",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 384,
+          "score": 3.0,
+          "class": "aluminium",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 385,
+          "score": 4.0,
+          "class": "aluminium",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 386,
+          "score": 5.0,
+          "class": "aluminium",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 387,
+          "score": 1.0,
+          "class": "metal",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 388,
+          "score": 2.0,
+          "class": "metal",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 389,
+          "score": 3.0,
+          "class": "metal",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 390,
+          "score": 4.0,
+          "class": "metal",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 391,
+          "score": 5.0,
+          "class": "metal",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 392,
+          "score": 1.0,
+          "class": "tire",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 393,
+          "score": 2.0,
+          "class": "tire",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 394,
+          "score": 3.0,
+          "class": "tire",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 395,
+          "score": 4.0,
+          "class": "tire",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 396,
+          "score": 5.0,
+          "class": "tire",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 397,
+          "score": 6.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 398,
+          "score": 7.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 399,
+          "score": 7.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 400,
+          "score": 8.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 401,
+          "score": 1.0,
+          "class": "organic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 402,
+          "score": 2.0,
+          "class": "organic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 403,
+          "score": 3.0,
+          "class": "organic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 404,
+          "score": 4.0,
+          "class": "organic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 405,
+          "score": 5.0,
+          "class": "organic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 406,
+          "score": 10.0,
+          "class": "paper",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 407,
+          "score": 10.0,
+          "class": "glass",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 408,
+          "score": 9.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 409,
+          "score": 10.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 410,
+          "score": 11.0,
+          "class": "plastic",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 411,
+          "score": 7.0,
+          "class": "pet",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 412,
+          "score": 0.800000011920929,
+          "class": "petsss",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        },
+        {
+          "id": 413,
+          "score": 0.5,
+          "class": "pets",
+          "timestamp": "2021-05-01T08:30:52",
+          "camera": {
+            "id": "default",
+            "latitude": "53.27137",
+            "longitude": "-7.827415"
+          }
+        }
+      ]
+    }
+  }
+}
