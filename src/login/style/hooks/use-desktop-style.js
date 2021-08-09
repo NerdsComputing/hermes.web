@@ -7,7 +7,7 @@ const buttonstyle = {
 }
 
 const root = {
-  width: '8vw',
+  width: '100%',
   height: '3vh',
   ...buttonstyle,
 }
