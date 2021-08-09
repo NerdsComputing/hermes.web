@@ -1,8 +1,7 @@
 import { from, reduce } from 'rxjs'
 import { mergeMap } from 'rxjs/operators'
 
-import { data } from 'detections/data.json'
-import { modes } from 'detections/modes'
+import { modes } from 'detections/chart/modes'
 
 const countDetections = (value, mode) => {
   const array = [[], [], [], []]
@@ -30,7 +29,7 @@ const accumulator = mode => (acc, [key, value]) => {
   return acc
 }
 
-export const byMode = (setState, mode) => from(data.detections.items)
+export const byMode = ({ setState, mode, detections }) => from(detections)
   .pipe(reduce((acc, current) => acc[current.class] ? addToClass(acc, current) : addClass(acc, current), {}))
   .pipe(mergeMap(data => Object.entries(data)))
   .pipe(reduce(accumulator(mode), {}))
