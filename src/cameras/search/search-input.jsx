@@ -1,18 +1,7 @@
 import React from 'react'
 import SearchBar from 'material-ui-search-bar'
 
-import { useContext } from 'cameras/context'
-import { useRequestSearch } from 'cameras/search/hooks/use-request-search'
-import { useCancelSearch } from 'cameras/search/hooks/use-cancel-search'
-import { useSearchbarStyle } from 'cameras/search/hooks/use-searchbar-style'
+import { useInputProps } from 'cameras/search/hooks/use-input-props'
 
-export const SearchInput = () => {
-  const { searchPhrase } = useContext()
-  const onChange = useRequestSearch()
-  const onCancelSearch = useCancelSearch()
-
-  return <SearchBar value={searchPhrase} placeholder={'Cameras by id'}
-                    onChange={onChange} classes={useSearchbarStyle()}
-                    onCancelSearch={onCancelSearch} />
-}
+export const SearchInput = () => <SearchBar {...useInputProps()} />
 
