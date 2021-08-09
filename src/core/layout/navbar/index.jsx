@@ -5,9 +5,7 @@ import { DesktopNavbar } from 'core/layout/navbar/desktop'
 import { MobileNavbar } from 'core/layout/navbar/mobile/mobile'
 
 export const Navbar = () => <Context.Provider value={useDefaultContext()}>
-  <>
-    <DesktopNavbar />
-    <MobileNavbar />
-  </>
+  <DesktopNavbar />
+  <MobileNavbar />
 </Context.Provider>
 
