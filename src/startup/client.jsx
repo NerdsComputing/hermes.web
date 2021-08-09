@@ -1,6 +1,8 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 
-export const client = new ApolloClient({
-  uri: 'https://hermes.api.dev.k8s.nerds.sh/',
+import { settings } from 'settings'
+
+export const client = () => new ApolloClient({
+  uri: settings().apiUrl,
   cache: new InMemoryCache(),
 })

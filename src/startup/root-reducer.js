@@ -1,3 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit'
 
-export const rootReducer = combineReducers({})
+import { cameras } from 'cameras/slices'
+
+export const rootReducer = combineReducers({ cameras })
