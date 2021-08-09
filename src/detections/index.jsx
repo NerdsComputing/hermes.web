@@ -3,7 +3,7 @@ import { Bar } from 'react-chartjs-2'
 import { Grid } from '@material-ui/core'
 
 import { labels } from 'detections/labels.json'
-import { byDays } from 'detections/by-days'
+import { byHours } from 'detections/by-hours'
 
 const hours = state => Object.entries(state)
   .map(([key, value]) => ({
@@ -18,13 +18,13 @@ const data = (state, label) => ({
 
 })
 
-const useData = (setState, byParameter) => useEffect(() => {
-  byParameter(setState)
+const useData = setState => useEffect(() => {
+  byHours(setState)
 }, [])
 
 export const Detections = () => {
   const [state, setState] = useState({})
-  useData(setState, byDays)
+  useData(setState)
 
   return <Grid item>
     <Bar width={'500px'} height={'500px'}
