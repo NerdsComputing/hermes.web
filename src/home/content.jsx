@@ -5,6 +5,7 @@ import { Live } from 'home/live'
 import { Title } from 'home/title'
 import { Carousel } from 'home/carousel'
 import { Marketing } from 'home/marketing'
+import { MeetTeam } from 'home/meet-team'
 
 export const Content = () => <Grid container alignItems={'center'} justify={'center'}>
   <Title />
@@ -12,3 +13,5 @@ export const Content = () => <Grid container alignItems={'center'} justify={'cen
   <Live />
   <Marketing />
 </Grid>
+  <MeetTeam />
+</>
