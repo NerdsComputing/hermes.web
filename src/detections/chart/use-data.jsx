@@ -1,12 +1,10 @@
-import { useSelector } from 'react-redux'
-import { get } from 'lodash'
-
 import { labels } from 'detections/chart/labels.json'
 import { byMode } from 'detections/chart/by-mode'
 import { buildDatasets } from 'detections/chart/build-datasets'
+import { useItems } from 'detections/chart/use-items'
 
 export const useData = mode => {
-  const items = useSelector(({ detections }) => get(detections, 'get.data.items', []))
+  const items = useItems()
 
   return {
     labels: labels[mode],
