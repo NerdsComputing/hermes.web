@@ -1,13 +1,15 @@
 import React from 'react'
+import { Grid } from '@material-ui/core'
 
-import { Title } from 'home/title'
-import { Carousel } from 'home/carousel'
 import { Live } from 'home/live'
+import { Title } from 'home/title'
+import { useStyles } from 'home/style'
+import { Carousel } from 'home/carousel'
 import { Marketing } from 'home/marketing'
 
-export const Content = () => <>
+export const Content = () => <Grid container alignItems={'center'} justify={'center'} className={useStyles().align}>
   <Title />
   <Carousel />
   <Live />
   <Marketing />
-</>
+</Grid>
