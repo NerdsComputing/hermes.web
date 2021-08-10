@@ -7,10 +7,4 @@ const title = {
   justifyContent: 'center',
 }
 
-const floatImage = { float: 'left', paddingRight: '15px', paddingBottom: '10px' }
-
-const display = { display: 'block' }
-
-const box = { marginRight: '10px', paddingLeft: '10px' }
-
-export const useStyles = makeStyles({ title, floatImage, display, box })
+export const useStyles = makeStyles({ title })
