@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core'
 
 import { NavigationButton } from 'home/live/navigation-button'
 
-export const Live = () => <Grid container justify={'center'} alignItems={'center'}>
+export const Live = () => <Grid item container justify={'center'} alignItems={'center'}>
   <NavigationButton path={'/cameras'}>See Cameras</NavigationButton>
   <NavigationButton path={'/detections'}>See Detections</NavigationButton>
 </Grid>
