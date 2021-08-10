@@ -1,15 +1,14 @@
 import React from 'react'
-import { Bar } from 'react-chartjs-2'
-import { Grid } from '@material-ui/core'
 
-import { useData } from 'detections/chart/use-data'
 import { useInit } from 'detections/chart/use-init'
+import { BarChart } from 'detections/chart/bar'
+import { useItems } from 'detections/chart/use-items'
+import { CircularIndeterminate } from 'detections/chart/loading'
 
 export const Chart = () => {
   useInit()
+  const items = useItems()
 
-  return <Grid item>
-    <Bar width={'500px'} height={'500px'} options={{ maintainAspectRatio: false }} data={useData('days')} />
-  </Grid>
+  return items.length > 0 ? <BarChart /> : <CircularIndeterminate />
 }
 
