@@ -12,6 +12,5 @@ export const Content = () => <Grid container alignItems={'center'} justify={'cen
   <Carousel />
   <Live />
   <Marketing />
-</Grid>
   <MeetTeam />
-</>
+</Grid>
