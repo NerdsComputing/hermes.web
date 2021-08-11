@@ -26,7 +26,7 @@ export const Content = () => {
   const [state, setState] = useState({})
   useData(setState)
 
-  return <Grid item>
+  return <Grid item xs={12} sm={12} md={12} lg={12}>
     <Bar width={'500px'} height={'500px'}
          options={{ maintainAspectRatio: false }} data={data(state, labels.days)} />
   </Grid>
