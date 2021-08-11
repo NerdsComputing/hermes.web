@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { useDisplayCase } from 'detections/hooks/use-display-case'
-import { useContent } from 'detections/hooks/use-content'
+import { Mode } from 'detections/chart/mode'
+import { useGetState } from 'detections/chart/use-get-state'
 
 export const Chart = () => {
-  const displayCase = useDisplayCase().true || 'loading'
-  const Content = useContent()[displayCase]
+  const Content = useGetState()
+  const [mode, setMode] = useState('hours')
 
-  return <Content />
+  return <>
+    <Mode mode={mode} setMode={setMode} />
+    <Content mode={mode} />
+  </>
 }
