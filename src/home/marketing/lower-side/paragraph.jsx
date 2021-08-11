@@ -1,13 +1,11 @@
 import React from 'react'
-import { Box, Grid, Typography } from '@material-ui/core'
-import { ParagraphOne } from 'home/marketing/paragraph-one'
-import { useStyles } from 'home/marketing/upper-side/style'
+import { Typography } from '@material-ui/core'
 
-export const Paragraph = () => <Grid item xs={12} sm={11} md={11} lg={10} className={useStyles().width}>
-  <Box className={useStyles().box} whiteSpace={'normal'} textAlign={'center'}>
-    <Typography paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore emagna aliqua.
-    </Typography>
-    <ParagraphOne />
-  </Box>
-</Grid>
+export const Paragraph = () => <Typography paragraph>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.
+  Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet.
+  Semper risus in hendrerit gravida rutrum quisque non tellus. Tellus id interdum velit laoreet id donec ultrices.
+  Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.
+  Tellus id interdum velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing.
+  Amet nisl suscipit adipiscing bibendum est ultricies integer quis.
+</Typography>
