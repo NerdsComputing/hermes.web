@@ -1,17 +1,10 @@
 import React from 'react'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import { Grid, makeStyles } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
-const root = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  marginTop: '300px',
-}
+import { CenterMessage } from 'detections/chart/center-message'
 
-const useStyles = makeStyles({ root })
-
-export const CircularIndeterminate = () => <Grid item classes={useStyles()}>
-  <CircularProgress />
-  <CircularProgress color={'secondary'} />
-</Grid>
+export const Loading = () => <CenterMessage>
+  <CircularProgress disableShrink />
+  <Typography>Loading data...</Typography>
+</CenterMessage>
