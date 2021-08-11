@@ -1,14 +1,11 @@
 import React from 'react'
 
-import { useInit } from 'detections/chart/use-init'
-import { BarChart } from 'detections/chart/bar'
-import { useItems } from 'detections/chart/use-items'
-import { CircularIndeterminate } from 'detections/chart/loading'
+import { useDisplayCase } from 'detections/hooks/use-display-case'
+import { useContent } from 'detections/hooks/use-content'
 
 export const Chart = () => {
-  useInit()
-  const items = useItems()
+  const displayCase = useDisplayCase().true || 'loading'
+  const Content = useContent()[displayCase]
 
-  return items.length > 0 ? <BarChart /> : <CircularIndeterminate />
+  return <Content />
 }
-
