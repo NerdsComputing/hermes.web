@@ -1,7 +1,7 @@
 export const titles = [
   { label: 'ID', hideOnMobile: true },
-  { label: 'CLASS', hideOnMobile: false },
+  { label: 'CLASS' },
   { label: 'SCORE', hideOnMobile: true },
-  { label: 'TIMESTAMP', hideOnMobile: false },
+  { label: 'TIMESTAMP' },
   { label: 'CAMERAID', hideOnMobile: true },
 ]
