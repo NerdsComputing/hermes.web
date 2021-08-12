@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 
 import { actions } from 'detections/fetch/slices/get'
 
-export const useInit = () => {
+export const useGetDetections = () => {
   const dispatch = useDispatch()
   const { attempt } = actions
 
