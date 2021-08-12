@@ -1,12 +1,6 @@
 import React from 'react'
-import { useMediaQuery, useTheme } from '@material-ui/core'
 
-import { Desktop } from 'detections/table/header/dektop'
-import { Mobile } from 'detections/table/header/mobile'
+import { titles } from 'detections/table/header/items'
+import { Cell } from 'detections/table/header/cell'
 
-export const Cells = () => {
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('sm'))
-
-  return matches ? <Desktop /> : <Mobile />
-}
+export const Cells = () => titles.map((item, index) => <Cell item={item} key={index} />)
