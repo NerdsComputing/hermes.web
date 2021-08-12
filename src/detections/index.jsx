@@ -14,4 +14,5 @@ export const Detections = () => <Wrapper>
     <Chart />      
     <Bar/>
   </Wrapper>
+}
 
