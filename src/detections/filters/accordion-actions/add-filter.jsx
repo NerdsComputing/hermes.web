@@ -2,11 +2,8 @@ import React from 'react'
 import { Button } from '@material-ui/core'
 import AddIcon from '@material-ui/icons/Add'
 
-import { useIsDisabled } from 'detections/filters/hooks/use-is-disabled'
-import { useAddFilterComponent } from 'detections/filters/hooks/use-add-filter-component'
+import { useAddFilterProps } from 'detections/filters/accordion-actions/use-add-filter-props'
 
-export const AddFilter = () => <Button fullWidth variant={'contained'} color={'primary'}
-                                       disabled={useIsDisabled()}
-                                       onClick={useAddFilterComponent()}>
+export const AddFilter = () => <Button {...useAddFilterProps()}>
   <AddIcon />
 </Button>
