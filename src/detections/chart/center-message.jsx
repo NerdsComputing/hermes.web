@@ -9,4 +9,4 @@ export const CenterMessage = ({ children }) => <Grid container justify={'center'
   {children}
 </Grid>
 
-CenterMessage.propTypes = { children: PropTypes.node.isRequired }
+CenterMessage.propTypes = { children: PropTypes.arrayOf(PropTypes.node).isRequired }
