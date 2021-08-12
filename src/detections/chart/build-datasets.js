@@ -1,5 +1,7 @@
+import { randomColor } from 'detections/chart/random-color'
+
 export const buildDatasets = ([key, value]) => ({
   label: key,
   data: value,
-  backgroundColor: `#${((1 << 24) * Math.random() | 0).toString(16)}`,
+  backgroundColor: randomColor(),
 })
