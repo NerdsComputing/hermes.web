@@ -1,11 +1,11 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
 
+import { Chart } from 'detections/chart'
+import { Behaviour } from 'detections/behaviour'
 import { Table } from 'detections/table'
-import { Content } from 'detections/content'
 
-export const Detections = () => <Grid container>
-  <Content />
+export const Detections = () => <>
+  <Behaviour />
+  <Chart />
   <Table />
-</Grid>
-
+</>
