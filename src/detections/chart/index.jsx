@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
 import { Mode } from 'detections/chart/mode'
-import { useGetState } from 'detections/chart/hooks/use-get-state'
+import { usePickContent } from 'detections/chart/hooks/use-pick-content'
 
 export const Chart = () => {
-  const Content = useGetState()
+  const Content = usePickContent()
   const [mode, setMode] = useState('hours')
 
   return <>
