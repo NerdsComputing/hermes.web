@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useMessageProps } from 'detections/chart/hooks/use-message-props'
 
-export const CenterMessage = ({ children }) => <Grid container {...useMessageProps()}>
+export const CenterMessage = ({ children }) => <Grid {...useMessageProps()}>
   {children}
 </Grid>
 
