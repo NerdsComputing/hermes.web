@@ -1,7 +1,7 @@
 import { groupBy } from 'lodash'
 
-import { modes } from 'detections/chart/modes'
-import { pickLength } from 'detections/chart/pick-length'
+import { modes } from 'detections/chart/format-data/modes'
+import { pickLength } from 'detections/chart/format-data/pick-length'
 
 const initial = {
   1: [],

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { Mode } from 'detections/chart/mode'
-import { useGetState } from 'detections/chart/use-get-state'
+import { useGetState } from 'detections/chart/hooks/use-get-state'
 
 export const Chart = () => {
   const Content = useGetState()

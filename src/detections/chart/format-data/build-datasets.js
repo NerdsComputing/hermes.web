@@ -1,4 +1,4 @@
-import { randomColor } from 'detections/chart/random-color'
+import { randomColor } from 'detections/chart/format-data/random-color'
 
 export const buildDatasets = ([key, value]) => ({
   label: key,
