@@ -1,6 +1,7 @@
 import React from 'react'
 import HighlightOffIcon from '@material-ui/icons/HighlightOff'
 import { Typography } from '@material-ui/core'
+
 import { CenterMessage } from 'detections/chart/center-message'
 
 export const Error = () => <CenterMessage>
