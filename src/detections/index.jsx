@@ -1,11 +1,17 @@
 import React from 'react'
 
-import { Chart } from 'detections/chart'
-import { Behaviour } from 'detections/behaviour'
+import { Wrapper } from 'detections/wrapper'
+import { Filters } from 'detections/filters'
+import { Bar } from 'detections/bar'
 import { Table } from 'detections/table'
 
 export const Detections = () => <>
-  <Behaviour />
-  <Chart />
   <Table />
-</>
+
+export const Detections = () => <Wrapper>
+    <Behaviour />
+    <Filters/>
+    <Chart />      
+    <Bar/>
+  </Wrapper>
+
