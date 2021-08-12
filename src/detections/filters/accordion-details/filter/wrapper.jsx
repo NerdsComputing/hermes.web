@@ -2,10 +2,9 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'detections/filters/accordion-details/filter/style'
+import { useProps } from 'detections/filters/accordion-details/filter/use-props'
 
-export const Wrapper = ({ children }) => <Grid container justify={'space-between'} alignItems={'center'}
-                                               classes={useStyles()}>
+export const Wrapper = ({ children }) => <Grid {...useProps()}>
   {children}
 </Grid>
 
