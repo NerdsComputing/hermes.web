@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Rows } from 'detections/table/body/rows'
+import { detections } from 'detections/table/body/data'
+import { Row } from 'detections/table/body/row'
 
-export const TableContent = () => <Rows />
+export const TableContent = () => detections.map((item, index) => <Row item={item} key={index} />)
 

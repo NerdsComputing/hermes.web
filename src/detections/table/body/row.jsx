@@ -1,19 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { TableRow, useMediaQuery, useTheme } from '@material-ui/core'
+import { TableCell, TableRow } from '@material-ui/core'
 
 import { useNavigation } from 'detections/table/hooks/use-navigation'
 import { useRowsStyle } from 'detections/table/hooks/use-rows-style'
-import { Mobile } from 'detections/table/body/mobile'
-import { Desktop } from 'detections/table/body/desktop'
+import { useRowProps } from 'detections/table/body/hooks/use-row-props'
 
-export const Row = ({ item }) => {
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('sm'))
-
-  return <TableRow onClick={useNavigation(`/detection/${item.id}`)} classes={useRowsStyle()}>
-    {matches ? <Desktop item={item} /> : <Mobile item={item} />}
-  </TableRow>
-}
+export const Row = ({ item }) => <TableRow onClick={useNavigation(`/detection/${item.id}`)} classes={useRowsStyle()}>
+  <TableCell {...useRowProps(true)}>{item.id}</TableCell>
+  <TableCell {...useRowProps(false)}>{item.class}</TableCell>
+  <TableCell {...useRowProps(true)}>{item.score}</TableCell>
+  <TableCell {...useRowProps(false)}>{item.timeStamp}</TableCell>
+  <TableCell {...useRowProps(true)}>cameraid</TableCell>
+</TableRow>
 
 Row.propTypes = { item: PropTypes.object.isRequired }
