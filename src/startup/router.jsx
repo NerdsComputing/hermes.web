@@ -1,10 +1,13 @@
 import React from 'react'
-import { BrowserRouter, Switch } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
-import { Mapping } from 'startup/mapping'
+import { routes } from 'startup/routes'
+import { PageNotFound } from 'page-not-found'
+import { Provider } from 'startup/provider'
 
-export const Router = () => <BrowserRouter>
-  <Switch>
-    <Mapping />
-  </Switch>
-</BrowserRouter>
+export const Router = () => <Provider>
+  {routes.map(route => <Route exact path={route.path} key={route.path}>
+    <route.component />
+  </Route>)}
+  <Route component={PageNotFound} />
+</Provider>
