@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useStyles } from 'detections/filters/accordion-details/filter-wrapper-style'
 
-export const FilterWrapper = ({ children }) => <Grid container classes={useStyles()}>
+export const FilterWrapper = ({ children }) => <Grid container classes={useStyles()} alignItems={'center'}>
   {children}
 </Grid>
 
