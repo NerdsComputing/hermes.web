@@ -1,13 +1,14 @@
 import { useCallback } from 'react'
+
 import { useContext } from 'detections/filters/context'
 
 const deleteFilter = index => filters => filters.filter((item, filterIndex) => filterIndex !== index)
 
 export const useRemoveFilter = (index, type) => {
-  const { setFilters, selectItems, setSelectItems } = useContext()
+  const { setFilters, filterVariants, setFilterVariants } = useContext()
 
   return useCallback(() => {
-    type !== 'filter' && setSelectItems([...selectItems, type])
+    type !== '' && setFilterVariants([...filterVariants, type])
     setFilters(deleteFilter(index))
-  }, [setFilters, index, selectItems, setSelectItems, type])
+  }, [setFilters, index, filterVariants, setFilterVariants, type])
 }

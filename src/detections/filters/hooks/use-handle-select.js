@@ -9,10 +9,10 @@ const addFilterType = (type, index) => filters => filters.map(findFilter(type, i
 const removeFromList = type => filters => filters.filter(item => item !== type)
 
 export const useHandleSelect = (type, index) => {
-  const { setFilters, setSelectItems } = useContext()
+  const { setFilters, setFilterVariants } = useContext()
 
   return useCallback(() => {
-    setSelectItems(removeFromList(type))
+    setFilterVariants(removeFromList(type))
     setFilters(addFilterType(type, index))
-  }, [setFilters, setSelectItems, index, type])
+  }, [setFilters, setFilterVariants, index, type])
 }
