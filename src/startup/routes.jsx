@@ -4,7 +4,6 @@ import { About } from 'about'
 import { Admin } from 'admin'
 import { Detections } from 'detections'
 import { Cameras } from 'cameras'
-import { PageNotFound } from 'page-not-found'
 
 export const routes = [{
 
@@ -31,8 +30,4 @@ export const routes = [{
 {
   path: '/',
   component: HomePage,
-},
-{
-  path: '/pageNotFound',
-  component: PageNotFound,
 }]
