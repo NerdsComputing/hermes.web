@@ -6,10 +6,10 @@ import { MenuItem } from 'detections/filters/accordion-details/filter/menu-item'
 import { useContext } from 'detections/filters/context'
 
 export const Select = ({ index }) => {
-  const { selectItems } = useContext()
+  const { filterVariants } = useContext()
 
   return <MuiSelect labelId={'input-label'}>
-    {selectItems.map(item => <MenuItem key={item} index={index} item={item} />)}
+    {filterVariants.map(item => <MenuItem key={item} index={index} item={item} />)}
   </MuiSelect>
 }
 
