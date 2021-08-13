@@ -10,7 +10,7 @@ export const AccordionDetails = () => {
 
   return filters.map((item, index) => <MuiAccordionDetails key={index}>
     {
-      item.type === '' ? <Filter index={index} /> : filtersTemplate[item.type](index)
+      item.type === '' ? <Filter index={index} /> : filtersTemplate[item.type]({ index })
     }
   </MuiAccordionDetails>)
 }
