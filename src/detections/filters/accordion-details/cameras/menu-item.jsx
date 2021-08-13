@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MenuItem as MuiMenuItem, Checkbox } from '@material-ui/core'
 import PropTypes from 'prop-types'
+
 import { useHandleCheck } from 'detections/filters/accordion-details/cameras/use-handle-check'
 
 export const MenuItem = ({ item }) => {
