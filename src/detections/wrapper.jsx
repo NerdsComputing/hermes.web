@@ -2,9 +2,10 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-export const Wrapper = ({ children }) => <Grid container direction={'column'}
-                                               alignItems={'center'}>
+import { useProps } from 'detections/use-props'
+
+export const Wrapper = ({ children }) => <Grid {...useProps()}>
   {children}
 </Grid>
 
-Wrapper.propTypes = { children: PropTypes.element.isRequired }
+Wrapper.propTypes = { children: PropTypes.array.isRequired }
