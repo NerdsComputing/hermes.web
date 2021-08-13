@@ -1,14 +1,9 @@
 import React from 'react'
 import { TextField } from '@material-ui/core'
+import PropTypes from 'prop-types'
 
-import { InputWrapper } from 'detections/filters/accordion-details/input-wrapper'
-import { useStyles } from 'detections/filters/accordion-details/filter-style'
+import { useProps } from 'detections/filters/accordion-details/score/use-props'
 
-export const Input = () => <InputWrapper>
-  <TextField type={'number'} variant={'outlined'} label={'From'}
-             InputProps={{ inputProps: { min: 0, max: 100 } }}
-             classes={useStyles()} />
-  <TextField type={'number'} variant={'outlined'} label={'To'}
-             InputProps={{ inputProps: { min: 0, max: 100 } }}
-             classes={useStyles()} />
-</InputWrapper>
+export const Input = ({ label }) => <TextField {...useProps(label)} />
+
+Input.propTypes = { label: PropTypes.string.isRequired }
