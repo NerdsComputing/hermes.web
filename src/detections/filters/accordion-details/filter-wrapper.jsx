@@ -8,4 +8,4 @@ export const FilterWrapper = ({ children }) => <Grid container classes={useStyle
   {children}
 </Grid>
 
-FilterWrapper.propTypes = { children: PropTypes.element.isRequired }
+FilterWrapper.propTypes = { children: PropTypes.arrayOf(PropTypes.node).isRequired}
