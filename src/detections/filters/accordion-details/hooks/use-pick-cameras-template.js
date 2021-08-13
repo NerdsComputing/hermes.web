@@ -3,7 +3,6 @@ import { useCamerasTemplate } from 'detections/filters/accordion-details/hooks/u
 
 export const usePickCamerasTemplate = () => {
   const displayCase = useDisplayCase().true || 'loading'
-  console.log(useDisplayCase().true)
 
   return useCamerasTemplate()[displayCase]
 }
