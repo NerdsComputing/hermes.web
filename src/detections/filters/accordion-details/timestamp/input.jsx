@@ -1,14 +1,13 @@
 import React from 'react'
+import { MuiPickersUtilsProvider } from '@material-ui/pickers'
+import DateFnsUtils from '@date-io/date-fns'
 
 import { InputWrapper } from 'detections/filters/accordion-details/input-wrapper'
-import { useStyles } from 'detections/filters/accordion-details/timestamp/style'
-import { TextField } from '@material-ui/core'
+import { Date } from 'detections/filters/accordion-details/timestamp/date'
 
 export const Input = () => <InputWrapper>
-  <TextField type={'datetime-local'} label={'From'} variant={'outlined'}
-             classes={useStyles()}
-             defaultValue={'2017-05-24T10:30'} />
-  <TextField type={'datetime-local'} label={'To'} variant={'outlined'}
-             classes={useStyles()}
-             defaultValue={'2017-05-24T10:30'} />
+  <MuiPickersUtilsProvider utils={DateFnsUtils}>
+    <Date label={'From'} />
+    <Date label={'To'} />
+  </MuiPickersUtilsProvider>
 </InputWrapper>
