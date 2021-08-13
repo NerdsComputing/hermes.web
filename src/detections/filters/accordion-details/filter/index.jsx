@@ -12,7 +12,7 @@ export const Filter = ({ index }) => <Wrapper>
     <InputLabel id={'input-label'}>Select</InputLabel>
     <Select index={index} />
   </FormControl>
-  <RemoveButton index={index} type={'filter'} />
+  <RemoveButton index={index} type={''} />
 </Wrapper>
 
 Filter.propTypes = { index: PropTypes.number.isRequired }
