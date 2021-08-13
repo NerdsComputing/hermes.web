@@ -1,16 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 
-import { Loading } from 'detections/filters/accordion-details/cameras/loading'
 import { InputWrapper } from 'detections/filters/accordion-details/input-wrapper'
-import { Input } from 'detections/filters/accordion-details/cameras/input'
+import { usePickCamerasTemplate } from 'detections/filters/accordion-details/hooks/use-pick-cameras-template'
 
 export const Content = () => {
-  const { data } = useSelector(({ cameras }) => cameras.get)
+  const CamerasTemplate = usePickCamerasTemplate()
 
   return <InputWrapper>
-    {
-      data ? <Input /> : <Loading />
-    }
+    <CamerasTemplate />
   </InputWrapper>
 }
