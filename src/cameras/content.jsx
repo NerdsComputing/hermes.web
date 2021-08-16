@@ -1,8 +1,10 @@
-import * as Material from '@material-ui/core'
 import React from 'react'
+import { Grid } from '@material-ui/core'
+import YouTube from 'react-youtube'
 
-export const Content = () => <Material.Grid item xs={12} md={9}>
-  <Material.Box pt={3}>
-    <Material.Typography align={'center'}>The content goes here...</Material.Typography>
-  </Material.Box>
-</Material.Grid>
+import { settings } from 'settings'
+import { useStyles } from 'cameras/style'
+
+export const Content = () => <Grid container xs={12} md={9} justify={'center'} classes={useStyles()}>
+  <YouTube videoId={settings().sources[0]} />
+</Grid>
