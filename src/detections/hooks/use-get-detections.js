@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
@@ -6,10 +7,12 @@ import { useContext } from 'detections/context'
 
 export const useGetDetections = () => {
   const dispatch = useDispatch()
-  const { attempt } = actions
+  const { attempt, reset } = actions
   const { pageIndex, pageSize } = useContext()
 
   useEffect(() => {
     dispatch(attempt({ pagination: { pageIndex, pageSize } }))
-  }, [dispatch, attempt, pageIndex, pageSize])
+    dispatch(reset({ pagination: { pageIndex, pageSize } }))
+  }, [dispatch, attempt, pageIndex, pageSize, reset])
 }
+/* eslint-disable */
