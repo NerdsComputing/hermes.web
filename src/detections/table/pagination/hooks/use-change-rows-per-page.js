@@ -1,5 +1,6 @@
-import { useContext } from 'detections/context'
 import { useCallback } from 'react'
+
+import { useContext } from 'detections/context'
 
 export const useChangeRowsPerPage = (callback, deps) => {
   const { setPageSize, setPageIndex } = useContext()
