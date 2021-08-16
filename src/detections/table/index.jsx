@@ -1,11 +1,9 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
 
-import { Pagination } from 'detections/table/pagination'
-import { Content } from 'detections/table/content'
-import { useStyles } from 'detections/style'
+import { usePickContent } from 'detections/table/hooks/use-pick-content'
 
-export const Table = () => <Grid item xs={12} sm={12} md={12} lg={12} classes={useStyles()}>
-  <Content />
-  <Pagination />
-</Grid>
+export const Table = () => {
+  const Content = usePickContent()
+
+  return <Content />
+}
