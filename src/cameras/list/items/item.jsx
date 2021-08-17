@@ -8,7 +8,7 @@ export const Item = ({ item }) => <ListItem>
   <ListItemIcon>
     <Checkbox {...useProps()} />
   </ListItemIcon>
-  <ListItemText primary={item} />
+  <ListItemText primary={item.id} />
 </ListItem>
 
 Item.propTypes = { item: PropTypes.string.isRequired }
