@@ -12,11 +12,14 @@ const markerStyle = {
 }
 const markerPosition = {
   position: 'absolute',
-  width: 20,
+  width: 50,
   height: 20,
   left: -20 / 2,
   top: -20 / 2,
   ...markerStyle,
 }
-
-export const useStyles = makeStyles({ markerPosition })
+const grid = {
+  height: '80vh',
+  width: '100%',
+}
+export const useStyles = makeStyles({ markerPosition, grid })
