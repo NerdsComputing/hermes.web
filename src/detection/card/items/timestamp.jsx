@@ -1,16 +1,11 @@
 import React from 'react'
-import { Box, Typography } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import { WatchLater } from '@material-ui/icons'
-import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/card/items/style'
-import { dateFormat } from 'detection/card/items/date-format'
+import { TimestampItem } from 'detection/card/items/timestamp-item'
 
-export const Timestamp = ({ item }) => <Box classes={useStyles()}>
+export const Timestamp = () => <Box classes={useStyles()}>
   <WatchLater />
-  <Typography variant={'h6'} align={'center'} className={useStyles().contentText}>
-    {dateFormat(item.timestamp)}
-  </Typography>
+  <TimestampItem />
 </Box>
-
-Timestamp.propTypes = { item: PropTypes.object.isRequired }

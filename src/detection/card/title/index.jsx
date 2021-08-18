@@ -1,9 +1,11 @@
 import React from 'react'
 import { CardHeader } from '@material-ui/core'
-import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/card/title/style'
+import { useItem } from 'detection/card/use-item'
 
-export const Title = ({ id }) => <CardHeader title={`Detection ${id}`} classes={useStyles()} />
+export const Title = () => {
+  const item = useItem()
 
-Title.propTypes = { id: PropTypes.string.isRequired }
+  return <CardHeader title={`Detection ${item.id}`} classes={useStyles()} />
+}

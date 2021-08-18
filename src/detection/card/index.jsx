@@ -9,7 +9,7 @@ export const Card = () => {
   const data = useItem()
 
   return <Wrapper>
-    <Title id={data.id} />
+    <Title />
     <Content item={data} />
   </Wrapper>
 }

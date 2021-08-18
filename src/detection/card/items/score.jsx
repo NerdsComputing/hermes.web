@@ -1,15 +1,11 @@
 import React from 'react'
-import { Box, Typography } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import CheckIcon from '@material-ui/icons/Check'
-import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/card/items/style'
+import { ScoreItem } from 'detection/card/items/score-item'
 
-export const Score = ({ item }) => <Box classes={useStyles()}>
+export const Score = () => <Box classes={useStyles()}>
   <CheckIcon />
-  <Typography variant={'h6'} className={useStyles().contentText}>
-    {`Score: ${item.score * 100}`}
-  </Typography>
+  <ScoreItem />
 </Box>
-
-Score.propTypes = { item: PropTypes.object.isRequired }
