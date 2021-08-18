@@ -1,16 +1,13 @@
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-
-import { actions } from 'cameras/slices/get'
-import { useContext } from 'cameras/context'
+import { useGetCameras } from 'cameras/hooks/use-get-cameras'
+import { useResetCameras } from 'cameras/hooks/use-reset-cameras'
 
 export const useFetchCameras = () => {
-  const dispatch = useDispatch()
-  const { attempt } = actions
-  const { searchPhrase } = useContext()
+  const get = useGetCameras()
+  const reset = useResetCameras()
 
   useEffect(() => {
-    dispatch(attempt({ pagination: { pageIndex: 0, pageSize: 10 }, ...searchPhrase && { ids: [searchPhrase] } }))
-  }, [dispatch, attempt, searchPhrase])
+    get()
+    reset()
+  }, [get, reset])
 }
-
