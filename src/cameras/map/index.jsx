@@ -8,8 +8,10 @@ import { useItems } from 'cameras/list/items/hooks/use-item'
 import { Marker } from 'cameras/map/marker'
 
 export const Map = () => <Grid container className={useStyles().grid}>
-  <GoogleMapReact defaultCenter={{ lat: 45.79, lng: 24.13 }} defaultZoom={15}
-                  bootstrapURLKeys={{ key: useSettings().google.map }}>
+  <GoogleMapReact defaultCenter={{
+    lat: useSettings().google.mapProps.latitude,
+    lng: useSettings().google.mapProps.longitude,
+  }} defaultZoom={useSettings().google.mapProps.zoom} bootstrapURLKeys={{ key: useSettings().google.map }}>
     {useItems().map((item, index) => <Marker item={item} key={index} lat={item.latitude} lng={item.longitude} />)}
   </GoogleMapReact>
 </Grid>
