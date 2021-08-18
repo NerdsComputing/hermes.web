@@ -5,7 +5,7 @@ import { useStyles } from 'detection/card/items/style'
 import { dateFormat } from 'detection/card/items/date-format'
 import { useItem } from 'detection/card/use-item'
 
-export const TimestampItem = () => {
+export const Item = () => {
   const item = useItem()
 
   return <Typography variant={'h6'} align={'center'} className={useStyles().contentText}>
