@@ -1,7 +1,7 @@
 import { from } from 'rxjs'
 import { map } from 'rxjs/operators'
 
-import { GET_DETECTIONS } from 'detections/fetch/repository/query'
+import { GET_DETECTIONS } from 'detections/repository/query'
 import { client } from 'startup/client'
 
 const buildQuery = payload => ({

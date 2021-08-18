@@ -2,8 +2,8 @@ import { ofType } from 'redux-observable'
 import { catchError, mergeMap } from 'rxjs/operators'
 import { of } from 'rxjs'
 
-import { actions } from 'detection/fetch/slices/get'
-import { repository } from 'detection/fetch/repository'
+import { actions } from 'detection/slices/get'
+import { repository } from 'detection/repository'
 
 export const get = actions$ => actions$
   .pipe(ofType(actions.attempt))
