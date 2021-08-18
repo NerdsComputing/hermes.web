@@ -7,7 +7,7 @@ import { useInputProps } from 'cameras/search/hooks/use-input-props'
 import { useContext } from 'cameras/context'
 
 export const SearchInput = () => <Grid item xs={12} sm={12} md={12} lg={12}>
-  <SearchBar {...useInputProps(useContext().setSearchInput)} />
+  <SearchBar {...useInputProps()} />
   <Grid container alignItems={'center'} justify={'center'}>
     <SearchButton value={useContext().searchInput}>Search Cameras</SearchButton>
   </Grid>
