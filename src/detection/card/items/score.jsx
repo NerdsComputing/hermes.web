@@ -1,8 +1,9 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import CheckIcon from '@material-ui/icons/Check'
-import { useStyles } from 'detection/card/items/style'
 import PropTypes from 'prop-types'
+
+import { useStyles } from 'detection/card/items/style'
 
 export const Score = ({ item }) => <Box classes={useStyles()}>
   <CheckIcon />
