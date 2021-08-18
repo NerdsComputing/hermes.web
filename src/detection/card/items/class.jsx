@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import CategoryIcon from '@material-ui/icons/Category'
+import PropTypes from 'prop-types'
 
 import { useStyles } from 'detection/card/items/style'
-import PropTypes from 'prop-types'
 
 export const Class = ({ item }) => <Box classes={useStyles()}>
   <CategoryIcon />
