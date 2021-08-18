@@ -19,7 +19,9 @@ export const persons = [{
   picture: bianca,
   name: 'Bianca Topircean',
   job: 'Developer',
-  description: 'Description',
+  description: `"The critical ingredient is getting off your butt and doing something. It's as simple as that. A lot of 
+  people have ideas, but there are few who decide to do something about them now. Not tomorrow. Not next week. 
+  But today."`,
 },
 {
   wrappedDescription: '',
@@ -27,7 +29,7 @@ export const persons = [{
   picture: andreea,
   name: 'Andreea Dumitrascu',
   job: 'Developer',
-  description: 'Description',
+  description: 'If it scares you, it might be a good thing to try',
 },
 {
   wrappedDescription: '',
@@ -35,6 +37,8 @@ export const persons = [{
   picture: andrei,
   name: 'Andrei Codrut Constantinescu',
   job: 'Developer',
-  description: 'Description',
+  description: `"My story as a developer begins back when i was in high school and i had to choose a course which
+   i had to focused. Initially I was scared of programming but with time i started to loving it and become better every 
+   day. It\`s true that it\`s like a living hell every day but has it\`s moments that are worth the suffering."`,
 },
 ]
