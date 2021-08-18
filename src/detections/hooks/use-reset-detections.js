@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { actions } from 'detections/fetch/slices/get'
+import { actions } from 'detections/slices/get'
 
 export const useResetDetections = () => {
   const dispatch = useDispatch()
