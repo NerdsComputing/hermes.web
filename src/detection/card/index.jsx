@@ -5,7 +5,7 @@ import { Title } from 'detection/card/title'
 import { Content } from 'detection/card/content'
 
 export const Card = () => <Wrapper>
-    <Title />
-    <Content />
-  </Wrapper>
+  <Title />
+  <Content />
+</Wrapper>
 
