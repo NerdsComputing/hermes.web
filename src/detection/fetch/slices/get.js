@@ -12,16 +12,13 @@ const success = (state, { payload }) => ({ ...state, data: payload })
 
 const failure = (state, { payload }) => ({ ...state, errors: payload })
 
-const reset = state => ({ ...state, data: null })
-
 export const get = createSlice({
   initialState,
-  name: 'getDetections',
+  name: 'getDetection',
   reducers: {
     attempt,
     success,
     failure,
-    reset,
   },
 })
 

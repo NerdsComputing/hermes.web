@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { CreatedAt } from 'detection/card/items/created-at'
-import { Description } from 'detection/card/items/description'
-import { Attachments } from 'detection/card/items/attachments'
 import { CardContent } from 'detection/card/card-content'
+import { Score } from 'detection/card/items/score'
+import { Class } from 'detection/card/items/class'
+import { Timestamp } from 'detection/card/items/timestamp'
 
 export const Content = () => <CardContent>
-  <CreatedAt />
-  <Description />
-  <Attachments />
+  <Score />
+  <Class />
+  <Timestamp />
 </CardContent>

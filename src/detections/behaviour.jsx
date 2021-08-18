@@ -1,8 +1,8 @@
-import { useGetDetections } from 'detections/hooks/use-get-detections'
 import { useFetchCameras } from 'detections/hooks/use-fetch-cameras'
+import { usePaginatedQuery } from 'detections/hooks/use-paginated-query'
 
 export const Behaviour = () => {
-  useGetDetections()
+  usePaginatedQuery()
   useFetchCameras()
 
   return ''

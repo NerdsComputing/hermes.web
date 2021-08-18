@@ -1,8 +1,14 @@
 import React from 'react'
 
+import { usePickContent } from 'detection/hooks/use-pick-content'
+import { Behaviour } from 'detection/behaviour'
 import { Wrapper } from 'detection/wrapper'
-import { Card } from 'detection/card'
 
-export const DetectionPage = () => <Wrapper>
-  <Card />
-</Wrapper>
+export const DetectionPage = () => {
+  const Content = usePickContent()
+
+  return <Wrapper>
+    <Behaviour />
+    <Content />
+  </Wrapper>
+}
