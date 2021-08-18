@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Box, Button, Grid } from '@material-ui/core'
+
 import { useSearchInput } from 'cameras/search/hooks/use-search-input'
 
 export const SearchButton = ({ children }) => <Grid item>
