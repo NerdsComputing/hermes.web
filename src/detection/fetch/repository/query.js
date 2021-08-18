@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
 
-export const GET_DETECTIONS = gql`
+export const GET_DETECTION = gql`
     query ($parameter: DetectionParameter!) {
         detections(parameter: $parameter){
             pageIndex
