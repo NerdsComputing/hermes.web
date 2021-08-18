@@ -7,8 +7,8 @@ export const usePaginatedQuery = () => {
   const reset = useResetDetections()
   const get = useGetDetections()
 
-  useEffect(()=>{
+  useEffect(() => {
     reset()
     get()
-  },[reset, get])
+  }, [reset, get])
 }
