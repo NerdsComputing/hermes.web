@@ -11,5 +11,5 @@ export const useGetDetections = () => {
 
   return useCallback(() => {
     dispatch(attempt({ pagination: { pageIndex, pageSize } }))
-  }, [dispatch, pageIndex, pageSize])
+  }, [dispatch, attempt, pageIndex, pageSize])
 }
