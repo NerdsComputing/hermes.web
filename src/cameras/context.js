@@ -1,14 +1,12 @@
 import React, { useContext as useReactContext, useState } from 'react'
 
-import * as mock from 'cameras/list/data.json'
-
 export const Context = React.createContext({})
 
 export const useContext = () => useReactContext(Context)
 
 export const useDefaultContext = () => {
-  const [rows, setRows] = useState(mock.data.cameras.items.map(item => item.id))
-  const [searchPhrase, setSearchPhrase] = useState('')
+  const [searchPhrase, setSearchPhrase] = useState(null)
+  const [searchInput, setSearchInput] = useState('')
 
-  return { rows, setRows, searchPhrase, setSearchPhrase }
+  return { searchPhrase, setSearchPhrase, searchInput, setSearchInput }
 }

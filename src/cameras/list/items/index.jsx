@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Item } from 'cameras/list/items/item'
-import { useContext } from 'cameras/context'
+import { useItems } from 'cameras/list/items/hooks/use-item'
 
 export const Items = () => {
-  const context = useContext()
+  const items = useItems()
 
-  return context.rows.map((item, index) => <Item item={item} key={index} />)
+  return items.map((item, index) => <Item item={item} key={index} />)
 }
