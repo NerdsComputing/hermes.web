@@ -1,16 +1,11 @@
-import { useStyles } from 'detections/filters/accordion-details/filter-style'
+import { useContext } from 'detections/context'
+import { useAddScore } from 'detections/filters/accordion-details/score/use-add-score'
+import { useSetInput } from 'detections/filters/accordion-details/score/use-set-input'
+import { useCheckErrors } from 'detections/filters/accordion-details/score/use-check-errors'
 
-const InputProps = {
-  inputProps: {
-    min: 0,
-    max: 0,
-  },
-}
-
-export const useProps = label => ({
-  type: 'number',
-  variant: 'outlined',
-  label,
-  InputProps,
-  classes: useStyles(),
+export const useProps = (label, name) => ({
+  ...useSetInput(label, name),
+  ...useCheckErrors(name),
+  value: useContext().values.score[name],
+  onChange: useAddScore(name),
 })
