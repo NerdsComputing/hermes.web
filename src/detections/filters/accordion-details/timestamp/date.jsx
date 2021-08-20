@@ -1,9 +1,15 @@
 import React from 'react'
-import { DateTimePicker } from '@material-ui/pickers'
+import { MuiPickersUtilsProvider, DateTimePicker } from '@material-ui/pickers'
+import DateFnsUtils from '@date-io/date-fns'
 import PropTypes from 'prop-types'
 
 import { useProps } from 'detections/filters/accordion-details/timestamp/use-props'
 
-export const Date = ({ label }) => <DateTimePicker {...useProps(label)} />
+export const Date = ({ label, name }) => <MuiPickersUtilsProvider utils={DateFnsUtils}>
+  <DateTimePicker {...useProps(label, name)} />
+</MuiPickersUtilsProvider>
 
-Date.propTypes = { label: PropTypes.string.isRequired }
+Date.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
