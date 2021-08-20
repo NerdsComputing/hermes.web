@@ -4,6 +4,9 @@ import PropTypes from 'prop-types'
 
 import { useProps } from 'detections/filters/accordion-details/score/use-props'
 
-export const Input = ({ label }) => <TextField {...useProps(label)} />
+export const Input = ({ label, name }) => <TextField {...useProps(label, name)} />
 
-Input.propTypes = { label: PropTypes.string.isRequired }
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
