@@ -1,10 +1,9 @@
-import { useStyles } from 'detections/filters/accordion-details/timestamp/style'
+import { useAddTimestamp } from 'detections/filters/accordion-details/timestamp/use-add-timestamp'
+import { useSetInput } from 'detections/filters/accordion-details/timestamp/use-set-input'
+import { useCheckErrors } from 'detections/filters/accordion-details/timestamp/use-check-errors'
 
-export const useProps = label => ({
-  value: '2017-05-24T10:30',
-  inputVariant: 'outlined',
-  onChange: val => console.log(val),
-  label,
-  ampm: false,
-  classes: useStyles(),
+export const useProps = (label, name) => ({
+  ...useSetInput(label, name),
+  ...useCheckErrors(name),
+  onChange: useAddTimestamp(name),
 })
