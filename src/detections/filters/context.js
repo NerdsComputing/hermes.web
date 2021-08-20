@@ -7,6 +7,7 @@ export const useContext = () => useReactContext(Context)
 export const useDefaultContext = () => {
   const [filters, setFilters] = useState([])
   const [filterVariants, setFilterVariants] = useState(['Class', 'Score', 'Timestamp', 'Cameras'])
+  const [cameraVariants, setCameraVariants] = useState({})
 
-  return { filters, setFilters, filterVariants, setFilterVariants }
+  return { filters, setFilters, filterVariants, setFilterVariants, cameraVariants, setCameraVariants }
 }
