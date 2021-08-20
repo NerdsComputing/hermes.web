@@ -4,11 +4,11 @@ import { useContext } from 'detections/filters/context'
 
 const deleteFilter = index => filters => filters.filter((item, filterIndex) => filterIndex !== index)
 
-export const useRemoveFilter = (index, type) => {
+export const useRemoveFilter = () => {
   const { setFilters, filterVariants, setFilterVariants } = useContext()
 
-  return useCallback(() => {
+  return useCallback((index, type) => {
     type !== '' && setFilterVariants([...filterVariants, type])
     setFilters(deleteFilter(index))
-  }, [setFilters, index, filterVariants, setFilterVariants, type])
+  }, [setFilters, filterVariants, setFilterVariants])
 }
