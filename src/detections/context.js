@@ -10,7 +10,7 @@ export const useContext = () => useReactContext(Context)
 export const useDefaultContext = () => {
   const [pageSize, setPageSize] = useState(10)
   const [pageIndex, setPageIndex] = useState(0)
-  const formik = useFormik({ ...useSetFormik(pageSize, pageIndex) })
+  const formik = useFormik(useSetFormik(pageSize, pageIndex))
 
   return { pageIndex, setPageIndex, pageSize, setPageSize, ...formik }
 }
