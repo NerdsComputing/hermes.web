@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
+
 import { useContext as useDetectionsContext } from 'detections/context'
 import { useContext as useFiltersContext } from 'detections/filters/context'
-import { useEffect } from 'react'
 
 const updateList = items => Object.entries(items)
   .map(([key, { checked }]) => checked && key)
