@@ -10,5 +10,5 @@ export const useRemoveFilter = () => {
   return useCallback((index, type) => {
     type !== '' && setFilterVariants([...filterVariants, type])
     setFilters(deleteFilter(index))
-  }, [setFilters, filterVariants, setFilterVariants, deleteFilter])
+  }, [setFilters, filterVariants, setFilterVariants])
 }

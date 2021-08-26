@@ -11,5 +11,5 @@ export const useCreateCameraList = () => {
 
   return useEffect(() => {
     setCameraVariants(createList(items))
-  }, [items, setCameraVariants, createList])
+  }, [items, setCameraVariants])
 }
