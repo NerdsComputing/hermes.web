@@ -4,8 +4,14 @@ import { isEmpty } from 'lodash'
 
 import { actions } from 'detections/slices/get'
 
+const formatScore = score => ({
+  greaterEqualThan: score.greaterEqualThan / 100,
+  lesserEqualThan: score.lesserEqualThan / 100,
+})
+
 const createValues = values => ({
   ...values,
+  score: formatScore(values.score),
   cameraIds: isEmpty(values.cameraIds) ? null : values.cameraIds,
 })
 
