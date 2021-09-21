@@ -7,6 +7,7 @@ export const useContext = () => useReactContext(Context)
 export const useDefaultContext = () => {
   const [searchPhrase, setSearchPhrase] = useState(null)
   const [searchInput, setSearchInput] = useState('')
+  const [items, setItems] = useState([])
 
-  return { searchPhrase, setSearchPhrase, searchInput, setSearchInput }
+  return { searchPhrase, setSearchPhrase, searchInput, setSearchInput, items, setItems }
 }
