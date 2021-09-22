@@ -1,9 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
+import PropTypes from 'prop-types'
 
 import { useStyles } from 'cameras/map/style'
 import { Info } from 'cameras/map/marker/info'
+import { Item } from 'cameras/map/marker/item-props'
 
 export const Marker = ({ item }) => <>
   <div className={useStyles().markerPosition}>
@@ -12,4 +13,4 @@ export const Marker = ({ item }) => <>
   {item.show && <Info item={item} />}
 </>
 
-Marker.propTypes = { item: PropTypes.object.isRequired }
+Marker.propTypes = { item: PropTypes.objectOf(Item).isRequired }
