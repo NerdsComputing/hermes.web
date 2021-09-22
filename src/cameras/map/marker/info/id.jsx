@@ -8,4 +8,4 @@ export const Id = ({ item }) => <Box>
   </Typography>
 </Box>
 
-Id.propTypes = { item: PropTypes.string.isRequired }
+Id.propTypes = { item: PropTypes.object.isRequired }

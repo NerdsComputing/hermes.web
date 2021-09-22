@@ -8,4 +8,4 @@ export const Longitude = ({ item }) => <Box>
   </Typography>
 </Box>
 
-Longitude.propTypes = { item: PropTypes.string.isRequired }
+Longitude.propTypes = { item: PropTypes.object.isRequired }

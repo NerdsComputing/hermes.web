@@ -8,4 +8,4 @@ export const Latitude = ({ item }) => <Box>
   </Typography>
 </Box>
 
-Latitude.propTypes = { item: PropTypes.string.isRequired }
+Latitude.propTypes = { item: PropTypes.object.isRequired }

@@ -12,4 +12,4 @@ export const Marker = ({ item }) => <>
   {item.show && <Info item={item} />}
 </>
 
-Marker.propTypes = { item: PropTypes.string.isRequired }
+Marker.propTypes = { item: PropTypes.object.isRequired }

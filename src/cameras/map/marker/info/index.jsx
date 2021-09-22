@@ -14,4 +14,4 @@ export const Info = ({ item }) => <Box className={useStyles().infoWindowStyle}>
   <Button> See more </Button>
 </Box>
 
-Info.propTypes = { item: PropTypes.string.isRequired }
+Info.propTypes = { item: PropTypes.object.isRequired }
