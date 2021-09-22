@@ -1,4 +1,4 @@
-import { useItems } from 'cameras/list/items/hooks/use-item'
+import { useItems } from 'cameras/map/hooks/use-items'
 
 export const useCalculateLat = () => {
   const items = useItems()
