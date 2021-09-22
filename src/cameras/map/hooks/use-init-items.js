@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useContext } from 'cameras/context'
 import { useItems } from 'cameras/map/hooks/use-items'
 
-export const useAddShowField = () => {
+export const useInitItems = () => {
   const { setItems } = useContext()
   const items = useItems()
   useEffect(() => {
