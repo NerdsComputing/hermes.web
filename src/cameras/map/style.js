@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 const markerStyle = {
-  color: '#3f51b5',
+  color: '#FFFFFF',
   padding: 4,
   cursor: 'pointer',
 }
