@@ -1,7 +1,7 @@
 import { useSettings } from 'settings/hooks/use-settings'
 import { useShowMarker } from 'cameras/map/hooks/use-show-marker'
-import {useLatitude} from 'cameras/map/hooks/use-latitude'
-import {useLongitude} from 'cameras/map/hooks/use-longitude'
+import { useLatitude } from 'cameras/map/hooks/use-latitude'
+import { useLongitude } from 'cameras/map/hooks/use-longitude'
 
 export const useMapProps = () => ({
   defaultCenter: { lat: useLatitude(), lng: useLongitude() },
