@@ -1,8 +1,7 @@
-import { useContext } from 'detections/context'
-import { isEmpty } from 'lodash'
+import { useContext } from 'detections/filters/context'
 
 export const useIsDisabled = () => {
-  const { errors } = useContext()
+  const { filterVariants } = useContext()
 
-  return !isEmpty(errors)
+  return filterVariants.length === 4
 }
