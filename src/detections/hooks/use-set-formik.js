@@ -4,8 +4,8 @@ import { useHandleSubmit } from 'detections/hooks/use-handle-submit'
 const initialValues = {
   class: '',
   timestamp: {
-    greaterEqualThan: '2021-01-01T08:30:52',
-    lesserEqualThan: Date.now(),
+    greaterEqualThan: '2021-01-01T00:00:00',
+    lesserEqualThan: '2021-09-01T00:00:00',
   },
   score: {
     greaterEqualThan: 0,
