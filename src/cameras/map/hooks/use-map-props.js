@@ -1,8 +1,10 @@
 import { useSettings } from 'settings/hooks/use-settings'
 import { useShowMarker } from 'cameras/map/hooks/use-show-marker'
+import { useLatitude } from 'cameras/map/hooks/use-latitude'
+import { useLongitude } from 'cameras/map/hooks/use-longitude'
 
 export const useMapProps = () => ({
-  defaultCenter: { lat: useSettings().google.map.latitude, lng: useSettings().google.map.longitude },
+  defaultCenter: { lat: useLatitude(), lng: useLongitude() },
   defaultZoom: useSettings().google.map.zoom,
   bootstrapURLKeys: { key: useSettings().google.map.id },
   onChildClick: useShowMarker(),
