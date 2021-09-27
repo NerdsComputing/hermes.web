@@ -6,4 +6,4 @@ export const InputWrapper = ({ children }) => <Grid item xs={11} sm={8} md={9} l
   {children}
 </Grid>
 
-InputWrapper.propTypes = { children: PropTypes.arrayOf(PropTypes.node).isRequired }
+InputWrapper.propTypes = { children: PropTypes.oneOfType([PropTypes.node, PropTypes.array]).isRequired }

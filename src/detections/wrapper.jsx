@@ -8,4 +8,4 @@ export const Wrapper = ({ children }) => <Grid {...useProps()}>
   {children}
 </Grid>
 
-Wrapper.propTypes = { children: PropTypes.array.isRequired }
+Wrapper.propTypes = { children: PropTypes.node.isRequired }

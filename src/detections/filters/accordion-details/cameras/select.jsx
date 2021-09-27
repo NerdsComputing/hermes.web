@@ -8,6 +8,6 @@ export const Select = () => {
   const { items } = useSelector(({ cameras }) => cameras.get.data)
 
   return <MuiSelect>
-    {items.map(item => <MenuItem key={item.id} item={item.id} />)}
+    {items.map((item, index) => <MenuItem key={item.id} index={index} item={item.id} />)}
   </MuiSelect>
 }

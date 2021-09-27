@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { MenuItem as MuiMenuItem, Checkbox } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useHandleCheck } from 'detections/filters/accordion-details/cameras/use-handle-check'
+import { useProps } from 'detections/filters/accordion-details/cameras/use-props'
+import { useIsChecked } from 'detections/filters/accordion-details/cameras/use-is-checked'
 
-export const MenuItem = ({ item }) => {
-  const [checked, setChecked] = useState(false)
+export const MenuItem = ({ item, index }) => <MuiMenuItem {...useProps(index, item)}>
+  <Checkbox checked={useIsChecked(item)} />
+  {item}
+</MuiMenuItem>
 
-  return <MuiMenuItem onClick={useHandleCheck(checked, setChecked)}>
-    <Checkbox checked={checked} />
-    {item}
-  </MuiMenuItem>
+MenuItem.propTypes = {
+  item: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 }
-
-MenuItem.propTypes = { item: PropTypes.string.isRequired }
