@@ -7,9 +7,9 @@ import { useContext } from 'detections/context'
 export const useGetDetections = () => {
   const dispatch = useDispatch()
   const { attempt } = actions
-  const { pageIndex, pageSize } = useContext()
+  const { pageIndex, pageSize, cameraId } = useContext()
 
   return useCallback(() => {
-    dispatch(attempt({ pagination: { pageIndex, pageSize } }))
-  }, [dispatch, attempt, pageIndex, pageSize])
+    dispatch(attempt({ cameraIds: [cameraId], pagination: { pageIndex, pageSize } }))
+  }, [dispatch, attempt, pageIndex, pageSize, cameraId])
 }
