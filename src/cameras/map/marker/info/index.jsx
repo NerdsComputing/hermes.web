@@ -7,12 +7,13 @@ import { Latitude } from 'cameras/map/marker/info/latitude'
 import { Longitude } from 'cameras/map/marker/info/longitude'
 import { useStyles } from 'cameras/map/style'
 import { Item } from 'cameras/map/marker/item-props'
+import { useNavigation } from 'detections/table/hooks/use-navigation'
 
 export const Info = ({ item }) => <Box className={useStyles().infoWindowStyle}>
   <Id item={item} />
   <Latitude item={item} />
   <Longitude item={item} />
-  <Button> See more </Button>
+  <Button onClick={useNavigation(`/detections?cameraId=${item.id}`)}> See more </Button>
 </Box>
 
 Info.propTypes = { item: PropTypes.objectOf(Item).isRequired }
