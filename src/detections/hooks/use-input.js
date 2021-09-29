@@ -1,7 +1,7 @@
 import { useContext } from 'detections/context'
-import { useCameraFilter } from 'detections/hooks/use-camera-filterjs'
+import { useCameraFilter } from 'detections/hooks/use-camera-filter'
 
-export const useParameters = () => {
+export const useInput = () => {
   const cameraId = useCameraFilter()
   const { pageIndex, pageSize } = useContext()
 
