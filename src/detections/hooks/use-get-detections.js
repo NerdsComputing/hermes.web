@@ -2,14 +2,12 @@ import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { actions } from 'detections/slices/get'
-import { useContext } from 'detections/context'
+import { useInput } from 'detections/hooks/use-input'
 
 export const useGetDetections = () => {
   const dispatch = useDispatch()
   const { attempt } = actions
-  const { pageIndex, pageSize } = useContext()
+  const input = useInput()
 
-  return useCallback(() => {
-    dispatch(attempt({ pagination: { pageIndex, pageSize } }))
-  }, [dispatch, attempt, pageIndex, pageSize])
+  return useCallback(() => dispatch(attempt(input)), [dispatch, attempt, input])
 }
