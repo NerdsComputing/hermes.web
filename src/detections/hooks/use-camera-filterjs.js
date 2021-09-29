@@ -1,9 +1,10 @@
 import { useLocation } from 'react-router-dom'
-import { useValidation } from 'detections/hooks/use-validation'
+import { useIndex } from 'detections/hooks/use-index'
 
 export const useCameraFilter = () => {
   const link = useLocation()
-  const alias = useValidation()
+  const cameraId = useIndex()
+  const splits = link.search.split(/[?,&,=]/)
 
-  return link.search && alias === 'cameraId' ? [link.search.split('=')[1].split('&')[0]] : [null]
+  return link.search && cameraId > 0 ? [splits[cameraId + 1]] : [null]
 }
