@@ -7,7 +7,7 @@ import { useParameters } from 'detections/hooks/use-parameters'
 export const useGetDetections = () => {
   const dispatch = useDispatch()
   const { attempt } = actions
-  const dataFetch = { ...useParameters() }
+  const input = useParameters()
 
-  return useCallback(() => dispatch(attempt(dataFetch)), [dispatch, attempt, dataFetch])
+  return useCallback(() => dispatch(attempt(input)), [dispatch, attempt, input])
 }
