@@ -5,8 +5,8 @@ export const useParameters = () => {
   const cameraId = useCameraFilter()
   const { pageIndex, pageSize } = useContext()
 
-  return ({
+  return {
     cameraIds: cameraId,
     pagination: { pageIndex, pageSize },
-  })
+  }
 }
