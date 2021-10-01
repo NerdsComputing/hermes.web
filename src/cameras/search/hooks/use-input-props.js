@@ -1,12 +1,9 @@
 import { useSearchbarStyle } from 'cameras/search/hooks/use-searchbar-style'
-import { useContext } from 'cameras/context'
+import { useSearchProps } from 'cameras/search/hooks/use-search-props'
 
-export const useInputProps = () => {
-  const { setSearchInput } = useContext()
+export const useInputProps = () => ({
+  ...useSearchProps(),
+  placeholder: 'Cameras by id',
+  classes: useSearchbarStyle(),
+})
 
-  return ({
-    onChange: setSearchInput,
-    placeholder: 'Cameras by id',
-    classes: useSearchbarStyle(),
-  })
-}
