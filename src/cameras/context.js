@@ -1,12 +1,14 @@
 import React, { useContext as useReactContext, useState } from 'react'
 
+import { useCameraFilter } from 'cameras/hooks/use-camera-filter'
+
 export const Context = React.createContext({})
 
 export const useContext = () => useReactContext(Context)
 
 export const useDefaultContext = () => {
-  const [searchPhrase, setSearchPhrase] = useState(null)
-  const [searchInput, setSearchInput] = useState('')
+  const [searchPhrase, setSearchPhrase] = useState(...useCameraFilter())
+  const [searchInput, setSearchInput] = useState(...useCameraFilter())
   const [items, setItems] = useState([])
 
   return { searchPhrase, setSearchPhrase, searchInput, setSearchInput, items, setItems }
