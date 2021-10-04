@@ -9,7 +9,14 @@ const root = {
 
 const contentText = { marginLeft: 5 }
 
+const linkProps = {
+  marginLeft: 5,
+  cursor: 'pointer',
+  color: '#3f51b4',
+}
+
 export const useStyles = makeStyles({
   root,
   contentText,
+  linkProps,
 })
