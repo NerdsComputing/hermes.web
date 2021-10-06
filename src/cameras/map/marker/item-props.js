@@ -5,4 +5,5 @@ export const Item = {
   longitude: number,
   latitude: number,
   show: bool,
+  detections: number,
 }
