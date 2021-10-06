@@ -1,11 +1,10 @@
 import { makeStyles } from '@material-ui/core'
 
-const position = ({ width: '100%' })
+const root = {
+  width: '100%',
+  backgroundColor: '#F5F7FA',
+  minHeight: '72px',
+  opacity: '1',
+}
 
-export const useStyles = makeStyles(theme => ({
-  root: {
-    backgroundColor: theme.palette.primary.main,
-    ...position,
-    minHeight: '5vh',
-  },
-}))
+export const useStyles = makeStyles({ root })
