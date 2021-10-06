@@ -1,11 +1,12 @@
+import { useEffect } from 'react'
+
 import { useContext } from 'cameras/context'
+import { sortItems } from 'cameras/map/marker/sort-items'
 
 export const useSortItems = () => {
   const { setItems } = useContext()
 
-  return setItems(items => {
-    items.sort((a, b) => Number(a.latitude) - Number(b.latitude))
-
-    return items
-  })
+  useEffect(() => {
+    setItems(sortItems)
+  }, [setItems])
 }
