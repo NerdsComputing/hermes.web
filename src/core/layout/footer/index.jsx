@@ -2,9 +2,9 @@ import React from 'react'
 import { Box } from '@material-ui/core'
 
 import { Content } from 'core/layout/footer/content'
-import { useStyles } from 'core/layout/footer/style'
+import { useFooterStyle } from 'core/layout/footer/use-footer-style'
 
-export const Footer = () => <Box className={useStyles().root} display={'flex'} justifyContent={'center'}
+export const Footer = () => <Box classes={useFooterStyle()} display={'flex'} justifyContent={'center'}
                                  alignItems={'center'}>
   <Content />
 </Box>
