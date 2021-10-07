@@ -1,5 +1,6 @@
-import { useDetections } from 'cameras/map/hooks/use-detections'
 import { useCallback } from 'react'
+
+import { useDetections } from 'cameras/map/hooks/use-detections'
 
 export const useDetectionsCount = () => {
   const detections = useDetections()
