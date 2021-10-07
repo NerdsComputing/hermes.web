@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useStyles } from 'core/layout/footer/content/style'
+import { useStyles } from 'core/layout/footer/style'
 import Heart from 'core/layout/icons/favorite_border_black_24dp.svg'
 import { Link, Typography } from '@material-ui/core'
 
