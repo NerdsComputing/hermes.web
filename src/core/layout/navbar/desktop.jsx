@@ -1,13 +1,13 @@
 import React from 'react'
 import { Hidden } from '@material-ui/core'
 
-import { Login } from 'login'
 import { AppBar } from 'core/layout/navbar/appbar'
 import { Header } from 'core/layout/navbar/header'
+import { LogoDesktop } from 'core/layout/navbar/logo/logo-desktop'
 
-export const DesktopNavbar = () => <Hidden xsDown>
+export const DesktopNavbar = () => <Hidden smDown>
   <AppBar>
+    <LogoDesktop />
     <Header />
-    <Login />
   </AppBar>
 </Hidden>
