@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { useStyles } from 'core/layout/navbar/style'
 
-export const AppBar = ({ children }) => <MaterialAppBar position={'sticky'} color={'transparent'} elevation={0}>
+export const AppBar = ({ children }) => <MaterialAppBar position={'sticky'} color={'white'} elevation={0}>
   <Grid container classes={useStyles()} alignItems={'center'} justify={'space-between'}>
     {children}
   </Grid>
