@@ -3,11 +3,11 @@ import { Hidden } from '@material-ui/core'
 
 import { AppBar } from 'core/layout/navbar/appbar'
 import { Header } from 'core/layout/navbar/header'
-import { LogoDesktop } from 'core/layout/navbar/logo/logo-desktop'
+import { Logo } from 'core/layout/navbar/logo/logo'
 
 export const DesktopNavbar = () => <Hidden smDown>
   <AppBar>
-    <LogoDesktop />
+    <Logo />
     <Header />
   </AppBar>
 </Hidden>
