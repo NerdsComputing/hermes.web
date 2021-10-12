@@ -2,21 +2,22 @@ import { makeStyles } from '@material-ui/core'
 
 const drawerWidth = 240
 const drawer = theme => ({
-  [theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('md')]: {
     width: drawerWidth,
     flexShrink: 0,
   },
 })
 const appBar = theme => ({
-  [theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('md')]: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
   },
 })
 const menuButton = theme => ({
+  marginTop: 25,
   marginRight: theme.spacing(2),
-  [theme.breakpoints.up('sm')]: { display: 'none' },
-  color: 'white',
+  [theme.breakpoints.up('md')]: { display: 'none' },
+  color: 'black',
 })
 const content = theme => ({
   flexGrow: 1,
