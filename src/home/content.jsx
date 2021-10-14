@@ -1,16 +1,14 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 
-import { Live } from 'home/live'
-import { Title } from 'home/title'
-import { Carousel } from 'home/carousel'
 import { Marketing } from 'home/marketing'
 import { MeetTeam } from 'home/meet-team'
+import { FirstSection } from 'home/first-section'
 
-export const Content = () => <Grid container alignItems={'center'} justify={'center'}>
-  <Title />
-  <Carousel />
-  <Live />
-  <Marketing />
-  <MeetTeam />
+export const Content = () => <Grid container>
+  <FirstSection />
+  <Grid item justify={'left'} style={{ padding: '0 15% 0 15%' }}>
+    <Marketing />
+    <MeetTeam />
+  </Grid>
 </Grid>
