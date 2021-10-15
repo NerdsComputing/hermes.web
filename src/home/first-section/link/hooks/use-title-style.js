@@ -6,9 +6,4 @@ const titleStyle = {
   fontWeight: 'bold',
 }
 
-export const useTitleStyle = makeStyles(theme => ({
-  root: {
-    ...titleStyle,
-    color: theme.palette.primary.main,
-  },
-}))
+export const useTitleStyle = makeStyles({ root: { ...titleStyle } })
