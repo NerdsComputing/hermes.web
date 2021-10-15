@@ -1,12 +1,11 @@
 import { makeStyles } from '@material-ui/core'
-import { theme } from 'theme'
 
-const root = {
-  marginRight: '24px',
-  textTransform: 'capitalize',
-  background: theme.palette.primary.dark,
-  color: 'white',
-  '&:hover': { background: theme.palette.primary.dark },
-}
+import { buttonStyle } from 'home/first-section/live/buttons/button-style'
 
-export const useCamerasStyle = makeStyles({ root })
+export const useCamerasStyle = makeStyles(theme => ({
+  root: {
+    ...buttonStyle,
+    background: theme.palette.primary.dark,
+    '&:hover': { background: theme.palette.primary.dark },
+  },
+}))
