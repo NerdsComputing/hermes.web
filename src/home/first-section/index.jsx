@@ -7,7 +7,7 @@ import { Live } from 'home/first-section/live'
 import { Link } from 'home/first-section/link'
 import { useStyle } from 'home/first-section/hooks/use-style'
 
-export const FirstSection = () => <Grid classes={useStyle()}>
+export const HeadingSection = () => <Grid classes={useStyle()}>
   <Grid container justify={'left'}>
     <Title />
     <Description />
