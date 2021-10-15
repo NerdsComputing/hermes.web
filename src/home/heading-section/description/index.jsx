@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Grid, Typography } from '@material-ui/core'
 
-import { useContentStyle } from 'home/first-section/description/hooks/use-content-style'
-import { useWrapperStyle } from 'home/first-section/description/hooks/use-wrapper-style'
-import { useStyle } from 'home/first-section/description/style'
+import { useContentStyle } from 'home/heading-section/description/hooks/use-content-style'
+import { useWrapperStyle } from 'home/heading-section/description/hooks/use-wrapper-style'
+import { useStyle } from 'home/heading-section/description/style'
 
 const content = `Hermes is a microservice that offers fast deployments of AI characters. 
 Each character can be an independent service with its own dashboard, database and 

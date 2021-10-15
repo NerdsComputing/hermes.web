@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 
-import { buttonStyle } from 'home/first-section/live/see-button/button-style'
+import { buttonStyle } from 'home/heading-section/live/see-button/button-style'
 
 export const useDetectionsStyle = makeStyles(theme => ({
   root: {
