@@ -6,9 +6,4 @@ const head = {
   fontWeight: 'bold',
 }
 
-export const useStyle = makeStyles(theme => ({
-  root: {
-    ...head,
-    color: theme.palette.primary.main,
-  },
-}))
+export const useStyle = makeStyles({ root: { ...head } })
