@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Grid } from '@material-ui/core'
+import { Box, Grid, Typography } from '@material-ui/core'
 
 import { useContentStyle } from 'home/first-section/description/hooks/use-content-style'
 import { useWrapperStyle } from 'home/first-section/description/hooks/use-wrapper-style'
@@ -11,8 +11,8 @@ graphql endpoint or it can connect to our global network.`
 
 export const Description = () => <Box classes={useWrapperStyle()}>
   <Grid item classes={useContentStyle()}>
-    <p className={useStyle().root}>
+    <Typography variant={'p'} color={'primary'} classes={useStyle()}>
       {content}
-    </p>
+    </Typography>
   </Grid>
 </Box>
