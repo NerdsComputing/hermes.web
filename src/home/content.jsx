@@ -1,16 +1,15 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 
-import { Live } from 'home/live'
-import { Title } from 'home/title'
-import { Carousel } from 'home/carousel'
 import { Marketing } from 'home/marketing'
 import { MeetTeam } from 'home/meet-team'
+import { useGridStyle } from 'home/heading-section/hooks/use-grid-style'
+import { HeadingSection } from 'home/heading-section'
 
-export const Content = () => <Grid container alignItems={'center'} justify={'center'}>
-  <Title />
-  <Carousel />
-  <Live />
-  <Marketing />
-  <MeetTeam />
+export const Content = () => <Grid container>
+  <HeadingSection />
+  <Grid item justify={'left'} classes={useGridStyle()}>
+    <Marketing />
+    <MeetTeam />
+  </Grid>
 </Grid>
