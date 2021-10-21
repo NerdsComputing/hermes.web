@@ -1,4 +1,4 @@
-export const featureCharacters = [
+export const futureCharacters = [
   {
     title: 'Air quality - Hippopotamus - Airy',
     content: `Airy - will monitor air quality during the day and night and it will have a history and data
