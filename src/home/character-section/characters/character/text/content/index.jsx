@@ -1,9 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Typography } from '@material-ui/core'
+import PropTypes from 'prop-types'
 
-import { useCharacterTitleStyle } from 'home/character-section/hooks/use-character-title-style'
-import { useDescriptionStyle } from 'home/character-section/hooks/use-descripiton-style'
+import { useCharacterTitleStyle }
+  from 'home/character-section/characters/character/text/content/hooks/use-character-title-style'
+import { useDescriptionStyle }
+  from 'home/character-section/characters/character/text/content/hooks/use-description-style'
 
 export const Content = ({ item }) => <>
   <Typography color={'primary'} classes={useCharacterTitleStyle()}>
