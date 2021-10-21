@@ -10,7 +10,7 @@ const border = {
   right: theme => ({ borderRight: buildBorders(theme) }),
 }
 
-export const create = variant => theme => ({
+export const useStyleForVariant = variant => theme => ({
   root: {
     ...border[variant](theme),
     background: `${theme.palette.tertiary.main} 0% 0% no-repeat padding-box`,
