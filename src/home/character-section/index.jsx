@@ -1,16 +1,10 @@
 import React from 'react'
-import { Grid, Typography } from '@material-ui/core'
 
-import { Character } from 'home/character-section/character'
-import { featureCharacters } from 'home/character-section/items'
-import { useSubtitleStyle } from 'home/character-section/hooks/use-subtitle-style'
-import { useGridStyle } from 'home/character-section/hooks/use-grid-style'
+import { Wrapper } from 'home/character-section/wrapper'
+import { Characters } from 'home/character-section/characters'
+import { Title } from 'home/character-section/title'
 
-export const CharacterSection = () => <Grid item justify={'left'} classes={useGridStyle()}>
-  <Typography color={'primary'} classes={useSubtitleStyle()}>Feature Characters</Typography>
-  <Grid container>
-    {
-      featureCharacters.map((item, index) => <Character item={item} key={index} />)
-    }
-  </Grid>
-</Grid>
+export const CharacterSection = () => <Wrapper>
+  <Title />
+  <Characters />
+</Wrapper>
