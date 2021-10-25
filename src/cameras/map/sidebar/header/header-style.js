@@ -1,5 +1,8 @@
 import { makeStyles } from '@material-ui/core'
 
-const root = { textAlign: 'center' }
+const root = {
+  fontSize: 32,
+  fontWeight: 'bold',
+}
 
 export const useHeaderStyle = makeStyles({ root })
