@@ -1,4 +1,4 @@
 export const useProps = () => ({
-  color: 'primary',
+  color: 'secondary',
   inputProps: { 'aria-label': 'secondary checkbox' },
 })
