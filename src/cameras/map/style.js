@@ -25,7 +25,7 @@ const infoWindowStyle = {
   width: 220,
   backgroundColor: 'white',
   boxShadow: '0 2px 7px 1px rgba(0, 0, 0, 0.3)',
-  padding: 10,
+  padding: 20,
   fontSize: 14,
   zIndex: 100,
 }

@@ -6,7 +6,7 @@ import { useBeginningStyle } from 'home/marketing/list/beginning-style'
 
 export const ListItem = ({ text, beginning }) => <MuiListItem style={{ padding: '0' }}>
   <Typography variant={'subtitle2'} classes={useBeginningStyle()}>{beginning}</Typography>
-  <ListItemText primary={text} />
+  <ListItemText secondary={text} />
 </MuiListItem>
 
 ListItem.propTypes = {
