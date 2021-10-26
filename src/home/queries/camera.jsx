@@ -6,13 +6,13 @@ import { useStyle } from 'home/queries/wrappers/hooks/use-styles'
 /* eslint-disable */
 export const Camera = () => <CenterQuery>
     <pre className={useStyle().root}>
-      {`       camera
-       {
-          id,
-          fingerprint,
-          longitude,
-          latitude
-       }
+      {`        camera
+        {
+           id,
+           fingerprint,
+           longitude,
+           latitude
+        }
       `}
       </pre>
 </CenterQuery>
