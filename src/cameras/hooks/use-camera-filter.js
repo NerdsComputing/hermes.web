@@ -7,5 +7,5 @@ export const useCameraFilter = () => {
   const index = useIndex()
   const keys = link.search.split(/[?,&,=]/)
 
-  return link.search && index > 0 ? [keys[index + 1]] : [null]
+  return link.search && index > 0 ? [keys[index + 1]] : ['']
 }
