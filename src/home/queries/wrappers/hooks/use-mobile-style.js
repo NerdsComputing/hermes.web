@@ -7,6 +7,7 @@ const root = {
   opacity: '1',
   color: '#52606C',
   marginLeft: '30px',
+  lineHeight: '20px',
 }
 
 const align = {
@@ -14,7 +15,7 @@ const align = {
   marginTop: '150px',
 }
 
-export const useMobileStyle = makeStyles({ 
+export const useMobileStyle = makeStyles({
   root,
   align,
 })

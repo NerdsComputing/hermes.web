@@ -7,6 +7,7 @@ const root = {
   opacity: '1',
   color: '#52606C',
   marginLeft: '300px',
+  lineHeight: '20px',
 }
 
 const align = {
