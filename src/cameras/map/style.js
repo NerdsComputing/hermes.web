@@ -16,6 +16,7 @@ const markerPosition = {
 const grid = {
   height: '80vh',
   width: '100%',
+  position: 'relative',
 }
 const infoWindowStyle = {
   position: 'relative',

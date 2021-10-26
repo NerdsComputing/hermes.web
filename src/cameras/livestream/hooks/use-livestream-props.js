@@ -1,4 +1,4 @@
-import { useStyles } from 'cameras/style'
+import { useStyles } from 'cameras/livestream/style'
 import { useSettings } from 'settings/hooks/use-settings'
 
 export const useLivestreamProps = () => ({

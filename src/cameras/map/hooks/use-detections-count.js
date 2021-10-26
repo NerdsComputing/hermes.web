@@ -2,8 +2,10 @@ import { useCallback } from 'react'
 
 import { useDetections } from 'cameras/map/hooks/use-detections'
 
-export const useDetectionsCount = () => {
-  const detections = useDetections()
+const count = camera => detection => detection.camera.id === camera.id
 
-  return useCallback(camera => detections.filter(detection => detection.camera.id === camera.id).length, [detections])
+export const useDetectionsCount = () => {
+  const detections = JSON.stringify(useDetections())
+
+  return useCallback(camera => JSON.parse(detections).filter(count(camera)).length, [detections])
 }
