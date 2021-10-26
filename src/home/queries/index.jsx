@@ -1,14 +1,9 @@
 import React from 'react'
 
-import { Detection } from 'home/queries/detection-query'
-import { Camera } from 'home/queries/camera-query'
-import { CenterQuery } from 'home/queries/wrappers/center-query'
+import { Detection } from 'home/queries/detection'
+import { Camera } from 'home/queries/camera'
 
 export const Queries = () => <>
-  <CenterQuery>
-    <Detection />
-  </CenterQuery>
-  <CenterQuery>
-    <Camera />
-  </CenterQuery>
+  <Detection />
+  <Camera />
 </>
