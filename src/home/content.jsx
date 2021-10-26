@@ -9,8 +9,8 @@ import { Queries } from 'home/queries'
 
 export const Content = () => <Grid container>
   <HeadingSection />
-  <Queries />
   <FirstCharacter />
+  <Queries />
   <CharacterSection />
   <MarketingStuff />
 </Grid>
