@@ -1,14 +1,14 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
 
 import { Name } from 'home/queries/detection-query/name'
 import { OpenBrace } from 'home/queries/detection-query/open-brace'
 import { CloseBrace } from 'home/queries/detection-query/close-brace'
 import { Properties } from 'home/queries/detection-query/properties'
+import { MarginWrapper } from 'home/queries/wrappers/margin-wrapper'
 
-export const Detection = () => <Grid item lg={6} md={6} sm={12} xs={12}>
+export const Detection = () => <MarginWrapper>
   <Name />
   <OpenBrace />
   <Properties />
   <CloseBrace />
-</Grid>
+</MarginWrapper>

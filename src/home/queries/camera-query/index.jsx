@@ -1,14 +1,14 @@
 import React from 'react'
-import { Grid } from '@material-ui/core'
 
 import { Name } from 'home/queries/camera-query/name'
 import { OpenBrace } from 'home/queries/camera-query/open-brace'
 import { Properties } from 'home/queries/camera-query/properties'
 import { CloseBrace } from 'home/queries/camera-query/close-brace'
+import { MarginWrapper } from 'home/queries/wrappers/margin-wrapper'
 
-export const Camera = () => <Grid item lg={6} md={6} sm={12} xs={12}>
+export const Camera = () => <MarginWrapper>
   <Name />
   <OpenBrace />
   <Properties />
   <CloseBrace />
-</Grid>
+</MarginWrapper>

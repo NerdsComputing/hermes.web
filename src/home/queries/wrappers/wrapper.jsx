@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { useStyles } from 'home/queries/hooks/use-style'
+import { useStyles } from 'home/queries/wrappers/hooks/use-style'
 
 export const Wrapper = ({ children }) => <Typography color={'primary'} classes={useStyles()}>
   { children }
