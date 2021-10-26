@@ -1,9 +1,9 @@
 import { makeStyles } from '@material-ui/core'
 
-const root = {
+const root = theme => ({
   margin: '5% 0 5% 0',
-  border: '1px solid #0000001F',
+  border: `1px solid ${theme.palette.white.main}`,
   borderRadius: 4,
-}
+})
 
-export const useSearchbarStyle = makeStyles({ root })
+export const useSearchbarStyle = makeStyles(theme => ({ root: root(theme) }))
