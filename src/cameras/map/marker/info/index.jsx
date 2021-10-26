@@ -1,21 +1,17 @@
 import React from 'react'
-import { Box, Button } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import { Id } from 'cameras/map/marker/info/id'
-import { Latitude } from 'cameras/map/marker/info/latitude'
-import { Longitude } from 'cameras/map/marker/info/longitude'
+import { Coordinates } from 'cameras/map/marker/info/coordinates'
 import { useStyles } from 'cameras/map/style'
-import { Item } from 'cameras/map/marker/item-props'
-import { useNavigation } from 'detections/table/hooks/use-navigation'
-import { TotalCounts } from 'cameras/map/marker/info/total-counts'
+import { Id } from 'cameras/map/marker/info/id'
+import { Button } from 'cameras/map/marker/info/button'
 
 export const Info = ({ item }) => <Box className={useStyles().infoWindowStyle}>
-  <Id item={item} />
-  <Latitude item={item} />
-  <Longitude item={item} />
-  <TotalCounts item={item} />
-  <Button onClick={useNavigation(`/detections?cameraId=${item.id}`)}> See more </Button>
+  <Id value={item.id} />
+  <Coordinates coordinate={'Latitude'} value={item.latitude} />
+  <Coordinates coordinate={'Longitude'} value={item.longitude} />
+  <Button cameraId={item.id} />
 </Box>
 
-Info.propTypes = { item: PropTypes.objectOf(Item).isRequired }
+Info.propTypes = { item: PropTypes.object.isRequired }
