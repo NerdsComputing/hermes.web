@@ -5,5 +5,6 @@ export const useStyles = makeStyles(() => ({
   align: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: '150px',
   },
 }))
