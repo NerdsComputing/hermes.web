@@ -14,7 +14,7 @@ const align = {
   marginTop: '150px',
 }
 
-export const useDesktopStyle = makeStyles({ 
+export const useDesktopStyle = makeStyles({
   root,
   align,
 })
