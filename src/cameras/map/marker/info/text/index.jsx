@@ -13,5 +13,5 @@ export const Text = ({ title, value }) => <Grid item className={useStyles().text
 
 Text.propTypes = {
   title: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 }

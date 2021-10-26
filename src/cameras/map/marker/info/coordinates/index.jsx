@@ -12,5 +12,5 @@ export const Coordinates = ({ coordinate, value }) => <Wrapper>
 
 Coordinates.propTypes = {
   coordinate: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
 }
