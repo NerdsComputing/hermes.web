@@ -1,14 +1,13 @@
 import { useMediaQuery, useTheme } from '@material-ui/core'
 
-import { useDesktopStyles } from 'cameras/map/sidebar/header/expand/styles/desktop-styles'
-import { useMobileStyles } from 'cameras/map/sidebar/header/expand/styles/mobile-styles'
+import { useOpacity } from 'cameras/map/sidebar/header/expand/use-opacity'
 
 export const useStyles = () => {
   const theme = useTheme()
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'))
 
-  const desktopStyle = useDesktopStyles()
-  const mobileStyle = useMobileStyles()
+  const desktopStyle = useOpacity(0)()
+  const mobileStyle = useOpacity(1)()
 
   return isDesktop ? desktopStyle : mobileStyle
 }
