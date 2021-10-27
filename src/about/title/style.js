@@ -1,9 +1,8 @@
 import { makeStyles } from '@material-ui/core'
 
-export const useStyles = makeStyles(() => ({
-  root: {
-    textAlign: 'center',
-    marginBottom: '6%',
-    color: '#89CFF0',
-  },
-}))
+const root = theme => ({
+  color: theme.palette.primary.main,
+  fontWeight: 'bold',
+})
+
+export const useStyles = makeStyles(theme => ({ root: root(theme) }))
