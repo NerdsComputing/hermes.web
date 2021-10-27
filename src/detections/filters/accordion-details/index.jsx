@@ -8,7 +8,7 @@ import { filtersTemplate } from 'detections/filters/accordion-details/filters-te
 export const Details = () => {
   const { filters } = useContext()
 
-  return filters.map((item, index) => <Grid key={index}>
+  return filters.map((item, index) => <Grid key={index} style={{ marginLeft: '40px' }}>
     {
       item.type === '' ? <Filter index={index} /> : filtersTemplate[item.type]({ index })
     }

@@ -8,4 +8,5 @@ export const useStyle = makeStyles(theme => ({
     background: theme.palette.secondary.main,
     '&:hover': { background: theme.palette.secondary.main },
   },
+  changeColor: { fill: '#FFFF' },
 }))
