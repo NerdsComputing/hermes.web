@@ -1,7 +1,7 @@
-import casian from 'about/images/casian.jpg'
-import bianca from 'about/images/bianca.jpg'
-import andreea from 'about/images/andreea.jpg'
-import andrei from 'about/images/andrei.jpg'
+import casian from 'about/persons/images/casian.jpg'
+import bianca from 'about/persons/images/bianca.jpg'
+import andreea from 'about/persons/images/andreea.jpg'
+import andrei from 'about/persons/images/andrei.jpg'
 
 export const persons = [{
   wrappedDescription: 'I\'m a really simple guy, I am a coffe addict,',
