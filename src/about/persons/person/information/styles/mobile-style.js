@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 const root = theme => ({
-  width: '460px',
+  width: '400px',
   backgroundColor: theme.palette.secondary.main,
   marginTop: '15px',
 })
