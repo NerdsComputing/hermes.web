@@ -1,5 +1,9 @@
 import { makeStyles } from '@material-ui/core'
 
-const root = { width: '100%' }
-
-export const useStyles = makeStyles({ root })
+export const useStyles = makeStyles(theme => ({
+  root: {
+    width: '600px',
+    backgroundColor: theme.palette.background.paper,
+  },
+  title: { margin: '15px' },
+}))

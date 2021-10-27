@@ -2,7 +2,6 @@ import { useContext } from 'detections/context'
 import { useIsDisabled } from 'detections/filters/accordion-actions/use-is-disabled'
 
 export const useFilterDetectionsProps = () => ({
-  fullWidth: true,
   variant: 'contained',
   color: 'secondary',
   type: 'submit',
