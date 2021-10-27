@@ -1,10 +1,10 @@
 import React from 'react'
-import { AccordionActions as MuiAccordionActions } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 
 import { AddFilter } from 'detections/filters/accordion-actions/add-filter'
 import { FilterDetections } from 'detections/filters/accordion-actions/filter-detections'
 
-export const AccordionActions = () => <MuiAccordionActions>
+export const Actions = () => <Grid container justify={'space-between'}>
   <AddFilter />
   <FilterDetections />
-</MuiAccordionActions>
+</Grid>

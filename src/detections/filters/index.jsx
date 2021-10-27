@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Context, useDefaultContext } from 'detections/filters/context'
-import { Accordion } from 'detections/filters/accordion'
+import { OpenButton } from 'detections/filters/open-button'
+import {Grid} from '@material-ui/core'
 
-export const Filters = () => <Context.Provider value={useDefaultContext()}>
-  <Accordion />
-</Context.Provider>
+export const Filters = () =>  <Grid container style={{ paddingLeft: '20px' }}>
+  <OpenButton />
+</Grid>
