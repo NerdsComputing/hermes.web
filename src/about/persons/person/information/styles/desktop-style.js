@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 const root = theme => ({
   backgroundColor: theme.palette.secondary.main,
-  width: 300,
+  width: '300px',
   marginLeft: '-10%',
 })
 
