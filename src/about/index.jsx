@@ -1,9 +1,10 @@
 import React from 'react'
 
-import { People } from 'about/persons/people'
+import { Persons } from 'about/persons'
 import { Title } from 'about/title'
+import { Wrapper } from 'about/wrapper'
 
-export const About = () => <>
+export const About = () => <Wrapper>
   <Title />
-  <People />
-</>
+  <Persons />
+</Wrapper>
