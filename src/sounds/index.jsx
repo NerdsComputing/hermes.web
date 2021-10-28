@@ -1,15 +1,16 @@
 import React from 'react'
 
-import YouTube from 'react-youtube'
-import { settings } from 'settings'
 import { Intro } from 'sounds/intro'
-import { Grid } from '@material-ui/core'
+import { useOnOpen } from 'sounds/use-on-open'
+import { Livestream } from 'sounds/livestream'
 
-const Sounds = () => <>
-  <Intro />
-  <Grid container justify={'flex-end'} style={{ paddingRight: '300px', marginBottom: '80px' }}>
-    <YouTube videoId={settings().sources[0]} />
-  </Grid>
-</>
+const Sounds = () => {
+  useOnOpen()
+
+  return <>
+    <Intro />
+    <Livestream />
+  </>
+}
 
 export default Sounds

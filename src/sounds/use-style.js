@@ -7,7 +7,12 @@ const root = {
 
 const text = { marginTop: '80px' }
 
+const live = {
+  paddingRight: '300px',
+  marginBottom: '80px',
+}
 export const useStyle = makeStyles(() => ({
   root,
   text,
+  live,
 }))
