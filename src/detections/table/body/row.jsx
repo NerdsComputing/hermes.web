@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { TableCell, TableRow } from '@material-ui/core'
 
-import { useNavigation } from 'detections/table/hooks/use-navigation'
 import { useRowsStyle } from 'detections/table/hooks/use-rows-style'
 import { useCellProps } from 'detections/table/body/hooks/use-cell-props'
 import { useDateFormat } from 'detections/table/body/hooks/use-date-format'
+import { useOnCellClick } from 'detections/table/body/use-on-cell-click'
 
-export const Row = ({ item }) => <TableRow onClick={useNavigation(`/detection/${item.id}`)} classes={useRowsStyle()}>
+export const Row = ({ item }) => <TableRow onClick={useOnCellClick(item)} classes={useRowsStyle()}>
   <TableCell {...useCellProps({ hideOnMobile: true })}>{item.id}</TableCell>
   <TableCell {...useCellProps({ hideOnMobile: false })}>{item.class}</TableCell>
   <TableCell {...useCellProps({ hideOnMobile: true })}>{item.score}</TableCell>
